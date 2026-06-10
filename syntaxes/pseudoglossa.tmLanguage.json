@@ -1,151 +1,151 @@
 {
-  "$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
-  "name": "Pseudoglossa",
-  "scopeName": "source.psg",
-  "patterns": [
-    { "include": "#comments" },
-    { "include": "#strings" },
-    { "include": "#program-structure" },
-    { "include": "#subprograms" },
-    { "include": "#control-keywords" },
-    { "include": "#io-keywords" },
-    { "include": "#operators" },
-    { "include": "#booleans" },
-    { "include": "#types" },
-    { "include": "#numbers" },
-    { "include": "#function-call" },
-    { "include": "#identifiers" }
-  ],
-  "repository": {
-    "comments": {
-      "patterns": [
-        {
-          "name": "comment.line.exclamation.pseudoglossa",
-          "match": "!.*$"
-        }
-      ]
-    },
-    "strings": {
-      "patterns": [
-        {
-          "name": "string.quoted.single.pseudoglossa",
-          "begin": "'",
-          "end": "'"
-        },
-        {
-          "name": "string.quoted.single.pseudoglossa",
-          "begin": "‘",
-          "end": "’"
-        }
-      ]
-    },
-    "program-structure": {
-      "patterns": [
-        {
-          "name": "keyword.other.program.pseudoglossa",
-          "match": "\\b(ΠΡΟΓΡΑΜΜΑ|ΤΕΛΟΣ_ΠΡΟΓΡΑΜΜΑΤΟΣ|ΑΡΧΗ|ΣΤΑΘΕΡΕΣ|ΜΕΤΑΒΛΗΤΕΣ)\\b"
-        }
-      ]
-    },
-    "subprograms": {
-      "patterns": [
-        {
-          "name": "keyword.other.subprogram.pseudoglossa",
-          "match": "\\b(ΔΙΑΔΙΚΑΣΙΑ|ΤΕΛΟΣ_ΔΙΑΔΙΚΑΣΙΑΣ|ΣΥΝΑΡΤΗΣΗ|ΤΕΛΟΣ_ΣΥΝΑΡΤΗΣΗΣ|ΚΑΛΕΣΕ)\\b"
-        },
-        {
-          "name": "entity.name.function.pseudoglossa",
-          "match": "(?<=\\b(?:ΔΙΑΔΙΚΑΣΙΑ|ΣΥΝΑΡΤΗΣΗ|ΚΑΛΕΣΕ)\\s)[A-Za-zΑ-ΩΆΈΉΊΌΎΏα-ωάέήίόύώ_][A-Za-zΑ-ΩΆΈΉΊΌΎΏα-ωάέήίόύώ0-9_]*"
-        }
-      ]
-    },
-    "control-keywords": {
-      "patterns": [
-        {
-          "name": "keyword.control.conditional.pseudoglossa",
-          "match": "\\b(ΑΝ|ΤΟΤΕ|ΑΛΛΙΩΣ|ΑΛΛΙΩΣ_ΑΝ|ΤΕΛΟΣ_ΑΝ|ΕΠΙΛΕΞΕ|ΠΕΡΙΠΤΩΣΗ|ΤΕΛΟΣ_ΕΠΙΛΟΓΩΝ)\\b"
-        },
-        {
-          "name": "keyword.control.loop.pseudoglossa",
-          "match": "\\b(ΓΙΑ|ΑΠΟ|ΜΕΧΡΙ|ΜΕ|ΒΗΜΑ|ΟΣΟ|ΕΠΑΝΑΛΑΒΕ|ΑΡΧΗ_ΕΠΑΝΑΛΗΨΗΣ|ΜΕΧΡΙΣ_ΟΤΟΥ|ΤΕΛΟΣ_ΕΠΑΝΑΛΗΨΗΣ)\\b"
-        },
-        {
-          "name": "keyword.control.flow.pseudoglossa",
-          "match": "\\b(ΕΠΙΛΕΞΕ|ΠΕΡΙΠΤΩΣΗ)\\b"
-        }
-      ]
-    },
-    "io-keywords": {
-      "patterns": [
-        {
-          "name": "support.function.io.pseudoglossa",
-          "match": "\\b(ΔΙΑΒΑΣΕ|ΓΡΑΨΕ|ΓΡΑΨΕ_)\\b"
-        }
-      ]
-    },
-    "operators": {
-      "patterns": [
-        {
-          "name": "keyword.operator.word.pseudoglossa",
-          "match": "\\b(DIV|MOD|ΚΑΙ|Η|ΟΧΙ)\\b"
-        },
-        {
-          "name": "keyword.operator.assignment.pseudoglossa",
-          "match": "(<--|<-|←)"
-        },
-        {
-          "name": "keyword.operator.comparison.pseudoglossa",
-          "match": "(<=|>=|<>|=|<|>)"
-        },
-        {
-          "name": "keyword.operator.arithmetic.pseudoglossa",
-          "match": "(\\+|-|\\*|/)"
-        }
-      ]
-    },
-    "booleans": {
-      "patterns": [
-        {
-          "name": "constant.language.boolean.pseudoglossa",
-          "match": "\\b(ΑΛΗΘΗΣ|ΨΕΥΔΗΣ)\\b"
-        }
-      ]
-    },
-    "types": {
-      "patterns": [
-        {
-          "name": "storage.type.pseudoglossa",
-          "match": "\\b(ΑΚΕΡΑΙΑ|ΑΚΕΡΑΙΕΣ|ΠΡΑΓΜΑΤΙΚΗ|ΠΡΑΓΜΑΤΙΚΕΣ|ΧΑΡΑΚΤΗΡΑΣ|ΧΑΡΑΚΤΗΡΕΣ|ΛΟΓΙΚΗ|ΛΟΓΙΚΕΣ)\\b"
-        }
-      ]
-    },
-    "numbers": {
-      "patterns": [
-        {
-          "name": "constant.numeric.float.pseudoglossa",
-          "match": "\\b\\d+[\\.,]\\d+\\b"
-        },
-        {
-          "name": "constant.numeric.integer.pseudoglossa",
-          "match": "\\b\\d+\\b"
-        }
-      ]
-    },
-    "function-call": {
-      "patterns": [
-        {
-          "name": "support.function.call.pseudoglossa",
-          "match": "\\b[A-Za-zΑ-ΩΆΈΉΊΌΎΏα-ωάέήίόύώ_][A-Za-zΑ-ΩΆΈΉΊΌΎΏα-ωάέήίόύώ0-9_]*(?=\\s*\\()"
-        }
-      ]
-    },
-    "identifiers": {
-      "patterns": [
-        {
-          "name": "variable.other.pseudoglossa",
-          "match": "\\b[A-Za-zΑ-ΩΆΈΉΊΌΎΏα-ωάέήίόύώ_][A-Za-zΑ-ΩΆΈΉΊΌΎΏα-ωάέήίόύώ0-9_]*\\b"
-        }
-      ]
-    }
-  }
+	"$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+	"name": "Pseudoglossa",
+	"scopeName": "source.psg",
+	"patterns": [
+		{ "include": "#comments" },
+		{ "include": "#strings" },
+		{ "include": "#program-structure" },
+		{ "include": "#subprograms" },
+		{ "include": "#control-keywords" },
+		{ "include": "#io-keywords" },
+		{ "include": "#operators" },
+		{ "include": "#booleans" },
+		{ "include": "#types" },
+		{ "include": "#numbers" },
+		{ "include": "#function-call" },
+		{ "include": "#identifiers" }
+	],
+	"repository": {
+		"comments": {
+			"patterns": [
+				{
+					"name": "comment.line.exclamation.pseudoglossa",
+					"match": "!.*$"
+				}
+			]
+		},
+		"strings": {
+			"patterns": [
+				{
+					"name": "string.quoted.single.pseudoglossa",
+					"begin": "'",
+					"end": "'"
+				},
+				{
+					"name": "string.quoted.single.pseudoglossa",
+					"begin": "‘",
+					"end": "’"
+				}
+			]
+		},
+		"program-structure": {
+			"patterns": [
+				{
+					"name": "keyword.other.program.pseudoglossa",
+					"match": "\\b(ΠΡΟΓΡΑΜΜΑ|ΤΕΛΟΣ_ΠΡΟΓΡΑΜΜΑΤΟΣ|ΑΡΧΗ|ΣΤΑΘΕΡΕΣ|ΜΕΤΑΒΛΗΤΕΣ)\\b"
+				}
+			]
+		},
+		"subprograms": {
+			"patterns": [
+				{
+					"name": "keyword.other.subprogram.pseudoglossa",
+					"match": "\\b(ΔΙΑΔΙΚΑΣΙΑ|ΤΕΛΟΣ_ΔΙΑΔΙΚΑΣΙΑΣ|ΣΥΝΑΡΤΗΣΗ|ΤΕΛΟΣ_ΣΥΝΑΡΤΗΣΗΣ|ΚΑΛΕΣΕ)\\b"
+				},
+				{
+					"name": "entity.name.function.pseudoglossa",
+					"match": "(?<=\\b(?:ΔΙΑΔΙΚΑΣΙΑ|ΣΥΝΑΡΤΗΣΗ|ΚΑΛΕΣΕ)\\s)[A-Za-zΑ-ΩΆΈΉΊΌΎΏα-ωάέήίόύώ_][A-Za-zΑ-ΩΆΈΉΊΌΎΏα-ωάέήίόύώ0-9_]*"
+				}
+			]
+		},
+		"control-keywords": {
+			"patterns": [
+				{
+					"name": "keyword.control.conditional.pseudoglossa",
+					"match": "\\b(ΑΝ|ΤΟΤΕ|ΑΛΛΙΩΣ|ΑΛΛΙΩΣ_ΑΝ|ΤΕΛΟΣ_ΑΝ|ΕΠΙΛΕΞΕ|ΠΕΡΙΠΤΩΣΗ|ΤΕΛΟΣ_ΕΠΙΛΟΓΩΝ)\\b"
+				},
+				{
+					"name": "keyword.control.loop.pseudoglossa",
+					"match": "\\b(ΓΙΑ|ΑΠΟ|ΜΕΧΡΙ|ΜΕ|ΒΗΜΑ|ΟΣΟ|ΕΠΑΝΑΛΑΒΕ|ΑΡΧΗ_ΕΠΑΝΑΛΗΨΗΣ|ΜΕΧΡΙΣ_ΟΤΟΥ|ΤΕΛΟΣ_ΕΠΑΝΑΛΗΨΗΣ)\\b"
+				},
+				{
+					"name": "keyword.control.flow.pseudoglossa",
+					"match": "\\b(ΕΠΙΛΕΞΕ|ΠΕΡΙΠΤΩΣΗ)\\b"
+				}
+			]
+		},
+		"io-keywords": {
+			"patterns": [
+				{
+					"name": "support.function.io.pseudoglossa",
+					"match": "\\b(ΔΙΑΒΑΣΕ|ΓΡΑΨΕ|ΓΡΑΨΕ_)\\b"
+				}
+			]
+		},
+		"operators": {
+			"patterns": [
+				{
+					"name": "keyword.operator.word.pseudoglossa",
+					"match": "\\b(DIV|MOD|ΚΑΙ|Η|ΟΧΙ)\\b"
+				},
+				{
+					"name": "keyword.operator.assignment.pseudoglossa",
+					"match": "(<--|<-|←)"
+				},
+				{
+					"name": "keyword.operator.comparison.pseudoglossa",
+					"match": "(<=|>=|<>|=|<|>)"
+				},
+				{
+					"name": "keyword.operator.arithmetic.pseudoglossa",
+					"match": "(\\+|-|\\*|/)"
+				}
+			]
+		},
+		"booleans": {
+			"patterns": [
+				{
+					"name": "constant.language.boolean.pseudoglossa",
+					"match": "\\b(ΑΛΗΘΗΣ|ΨΕΥΔΗΣ)\\b"
+				}
+			]
+		},
+		"types": {
+			"patterns": [
+				{
+					"name": "storage.type.pseudoglossa",
+					"match": "\\b(ΑΚΕΡΑΙΑ|ΑΚΕΡΑΙΕΣ|ΠΡΑΓΜΑΤΙΚΗ|ΠΡΑΓΜΑΤΙΚΕΣ|ΧΑΡΑΚΤΗΡΑΣ|ΧΑΡΑΚΤΗΡΕΣ|ΛΟΓΙΚΗ|ΛΟΓΙΚΕΣ)\\b"
+				}
+			]
+		},
+		"numbers": {
+			"patterns": [
+				{
+					"name": "constant.numeric.float.pseudoglossa",
+					"match": "\\b\\d+[\\.,]\\d+\\b"
+				},
+				{
+					"name": "constant.numeric.integer.pseudoglossa",
+					"match": "\\b\\d+\\b"
+				}
+			]
+		},
+		"function-call": {
+			"patterns": [
+				{
+					"name": "support.function.call.pseudoglossa",
+					"match": "\\b[A-Za-zΑ-ΩΆΈΉΊΌΎΏα-ωάέήίόύώ_][A-Za-zΑ-ΩΆΈΉΊΌΎΏα-ωάέήίόύώ0-9_]*(?=\\s*\\()"
+				}
+			]
+		},
+		"identifiers": {
+			"patterns": [
+				{
+					"name": "variable.other.pseudoglossa",
+					"match": "\\b[A-Za-zΑ-ΩΆΈΉΊΌΎΏα-ωάέήίόύώ_][A-Za-zΑ-ΩΆΈΉΊΌΎΏα-ωάέήίόύώ0-9_]*\\b"
+				}
+			]
+		}
+	}
 }

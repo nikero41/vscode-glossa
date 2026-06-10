@@ -1,25 +1,40 @@
 {
-  "name": "pseudoglossa-language-support",
-  "displayName": "Pseudoglossa Language Support",
-  "description": "",
-  "version": "0.0.1",
-  "engines": {
-    "vscode": "^1.120.0"
-  },
-  "categories": [
-    "Programming Languages"
-  ],
-  "contributes": {
-    "languages": [{
-      "id": "pseudoglossa",
-      "aliases": ["Pseudoglossa", "pseudoglossa"],
-      "extensions": [".psg"],
-      "configuration": "./language-configuration.json"
-    }],
-    "grammars": [{
-      "language": "pseudoglossa",
-      "scopeName": "source.psg",
-      "path": "./syntaxes/pseudoglossa.tmLanguage.json"
-    }]
-  }
+	"name": "pseudoglossa-language-support",
+	"displayName": "Pseudoglossa Language Support",
+	"description": "",
+	"version": "0.0.1",
+	"scripts": {
+		"fmt": "oxfmt"
+	},
+	"engines": {
+		"vscode": "^1.120.0"
+	},
+	"categories": [
+		"Programming Languages"
+	],
+	"contributes": {
+		"languages": [
+			{
+				"id": "pseudoglossa",
+				"aliases": [
+					"Pseudoglossa",
+					"pseudoglossa"
+				],
+				"extensions": [
+					".psg"
+				],
+				"configuration": "./language-configuration.json"
+			}
+		],
+		"grammars": [
+			{
+				"language": "pseudoglossa",
+				"scopeName": "source.psg",
+				"path": "./syntaxes/pseudoglossa.tmLanguage.json"
+			}
+		]
+	},
+	"devDependencies": {
+		"oxfmt": "^0.54.0"
+	}
 }
