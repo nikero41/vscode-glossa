@@ -13,7 +13,9 @@
 		{ "include": "#booleans" },
 		{ "include": "#types" },
 		{ "include": "#numbers" },
+		{ "include": "#builtin-functions" },
 		{ "include": "#function-call" },
+		{ "include": "#punctuation" },
 		{ "include": "#identifiers" }
 	],
 	"repository": {
@@ -50,28 +52,60 @@
 		"subprograms": {
 			"patterns": [
 				{
-					"name": "keyword.other.subprogram.pseudoglossa",
-					"match": "\\b(ΔΙΑΔΙΚΑΣΙΑ|ΤΕΛΟΣ_ΔΙΑΔΙΚΑΣΙΑΣ|ΣΥΝΑΡΤΗΣΗ|ΤΕΛΟΣ_ΣΥΝΑΡΤΗΣΗΣ|ΚΑΛΕΣΕ)\\b"
+					"match": "\\b(ΔΙΑΔΙΚΑΣΙΑ)\\s+([A-Za-zΑ-ΩΆΈΉΊΌΎΏα-ωάέήίόύώ_][A-Za-zΑ-ΩΆΈΉΊΌΎΏα-ωάέήίόύώ0-9_]*)(\\s*\\()([^)]*)(\\))",
+					"captures": {
+						"1": { "name": "keyword.other.subprogram.pseudoglossa" },
+						"2": { "name": "entity.name.function.pseudoglossa" },
+						"3": { "name": "punctuation.section.group.begin.pseudoglossa" },
+						"4": { "name": "variable.parameter.pseudoglossa" },
+						"5": { "name": "punctuation.section.group.end.pseudoglossa" }
+					}
 				},
 				{
-					"name": "entity.name.function.pseudoglossa",
-					"match": "(?<=\\b(?:ΔΙΑΔΙΚΑΣΙΑ|ΣΥΝΑΡΤΗΣΗ|ΚΑΛΕΣΕ)\\s)[A-Za-zΑ-ΩΆΈΉΊΌΎΏα-ωάέήίόύώ_][A-Za-zΑ-ΩΆΈΉΊΌΎΏα-ωάέήίόύώ0-9_]*"
+					"match": "\\b(ΣΥΝΑΡΤΗΣΗ)\\s+([A-Za-zΑ-ΩΆΈΉΊΌΎΏα-ωάέήίόύώ_][A-Za-zΑ-ΩΆΈΉΊΌΎΏα-ωάέήίόύώ0-9_]*)(\\s*\\()([^)]*)(\\))(\\s*:)(\\s*)(ΑΚΕΡΑΙΑ|ΠΡΑΓΜΑΤΙΚΗ|ΧΑΡΑΚΤΗΡΑΣ|ΛΟΓΙΚΗ)",
+					"captures": {
+						"1": { "name": "keyword.other.subprogram.pseudoglossa" },
+						"2": { "name": "entity.name.function.pseudoglossa" },
+						"3": { "name": "punctuation.section.group.begin.pseudoglossa" },
+						"4": { "name": "variable.parameter.pseudoglossa" },
+						"5": { "name": "punctuation.section.group.end.pseudoglossa" },
+						"6": { "name": "punctuation.separator.colon.pseudoglossa" },
+						"8": { "name": "storage.type.pseudoglossa" }
+					}
+				},
+				{
+					"match": "\\b(ΚΑΛΕΣΕ)\\s+([A-Za-zΑ-ΩΆΈΉΊΌΎΏα-ωάέήίόύώ_][A-Za-zΑ-ΩΆΈΉΊΌΎΏα-ωάέήίόύώ0-9_]*)(?=\\s*\\()",
+					"captures": {
+						"1": { "name": "keyword.other.subprogram.pseudoglossa" },
+						"2": { "name": "entity.name.function.call.pseudoglossa" }
+					}
+				},
+				{
+					"name": "keyword.other.subprogram.pseudoglossa",
+					"match": "\\b(ΤΕΛΟΣ_ΔΙΑΔΙΚΑΣΙΑΣ|ΤΕΛΟΣ_ΣΥΝΑΡΤΗΣΗΣ)\\b"
 				}
 			]
 		},
 		"control-keywords": {
 			"patterns": [
 				{
+					"match": "\\b(ΠΕΡΙΠΤΩΣΗ)\\s+(ΑΛΛΙΩΣ)\\b",
+					"captures": {
+						"1": { "name": "keyword.control.switch.pseudoglossa" },
+						"2": { "name": "keyword.control.default.pseudoglossa" }
+					}
+				},
+				{
 					"name": "keyword.control.conditional.pseudoglossa",
-					"match": "\\b(ΑΝ|ΤΟΤΕ|ΑΛΛΙΩΣ|ΑΛΛΙΩΣ_ΑΝ|ΤΕΛΟΣ_ΑΝ|ΕΠΙΛΕΞΕ|ΠΕΡΙΠΤΩΣΗ|ΤΕΛΟΣ_ΕΠΙΛΟΓΩΝ)\\b"
+					"match": "\\b(ΑΝ|ΤΟΤΕ|ΑΛΛΙΩΣ_ΑΝ|ΑΛΛΙΩΣ|ΤΕΛΟΣ_ΑΝ)\\b"
 				},
 				{
 					"name": "keyword.control.loop.pseudoglossa",
 					"match": "\\b(ΓΙΑ|ΑΠΟ|ΜΕΧΡΙ|ΜΕ|ΒΗΜΑ|ΟΣΟ|ΕΠΑΝΑΛΑΒΕ|ΑΡΧΗ_ΕΠΑΝΑΛΗΨΗΣ|ΜΕΧΡΙΣ_ΟΤΟΥ|ΤΕΛΟΣ_ΕΠΑΝΑΛΗΨΗΣ)\\b"
 				},
 				{
-					"name": "keyword.control.flow.pseudoglossa",
-					"match": "\\b(ΕΠΙΛΕΞΕ|ΠΕΡΙΠΤΩΣΗ)\\b"
+					"name": "keyword.control.switch.pseudoglossa",
+					"match": "\\b(ΕΠΙΛΕΞΕ|ΠΕΡΙΠΤΩΣΗ|ΤΕΛΟΣ_ΕΠΙΛΟΓΩΝ)\\b"
 				}
 			]
 		},
@@ -79,7 +113,7 @@
 			"patterns": [
 				{
 					"name": "support.function.io.pseudoglossa",
-					"match": "\\b(ΔΙΑΒΑΣΕ|ΓΡΑΨΕ|ΓΡΑΨΕ_)\\b"
+					"match": "\\b(ΔΙΑΒΑΣΕ|ΓΡΑΨΕ_|ΓΡΑΨΕ)(?![A-Za-zΑ-ΩΆΈΉΊΌΎΏα-ωάέήίόύώ0-9_])"
 				}
 			]
 		},
@@ -87,11 +121,15 @@
 			"patterns": [
 				{
 					"name": "keyword.operator.word.pseudoglossa",
-					"match": "\\b(DIV|MOD|ΚΑΙ|Η|ΟΧΙ)\\b"
+					"match": "\\b(DIV|MOD|ΚΑΙ|Η|Ή|ΟΧΙ)\\b"
 				},
 				{
 					"name": "keyword.operator.assignment.pseudoglossa",
 					"match": "(<--|<-|←)"
+				},
+				{
+					"name": "keyword.operator.range.pseudoglossa",
+					"match": "\\.\\."
 				},
 				{
 					"name": "keyword.operator.comparison.pseudoglossa",
@@ -99,7 +137,7 @@
 				},
 				{
 					"name": "keyword.operator.arithmetic.pseudoglossa",
-					"match": "(\\+|-|\\*|/)"
+					"match": "(\\+|-|\\*|/|\\^)"
 				}
 			]
 		},
@@ -123,7 +161,7 @@
 			"patterns": [
 				{
 					"name": "constant.numeric.float.pseudoglossa",
-					"match": "\\b\\d+[\\.,]\\d+\\b"
+					"match": "\\b\\d+\\.\\d+\\b"
 				},
 				{
 					"name": "constant.numeric.integer.pseudoglossa",
@@ -131,11 +169,47 @@
 				}
 			]
 		},
+		"builtin-functions": {
+			"patterns": [
+				{
+					"name": "support.function.builtin.pseudoglossa",
+					"match": "\\b(ΗΜ|ΣΥΝ|ΕΦ|Τ_Ρ|Α_Μ|Α_Τ|ΛΟΓ|Ε)(?=\\s*\\()"
+				}
+			]
+		},
 		"function-call": {
 			"patterns": [
 				{
-					"name": "support.function.call.pseudoglossa",
+					"name": "entity.name.function.call.pseudoglossa",
 					"match": "\\b[A-Za-zΑ-ΩΆΈΉΊΌΎΏα-ωάέήίόύώ_][A-Za-zΑ-ΩΆΈΉΊΌΎΏα-ωάέήίόύώ0-9_]*(?=\\s*\\()"
+				}
+			]
+		},
+		"punctuation": {
+			"patterns": [
+				{
+					"name": "punctuation.definition.array.begin.pseudoglossa",
+					"match": "\\["
+				},
+				{
+					"name": "punctuation.definition.array.end.pseudoglossa",
+					"match": "\\]"
+				},
+				{
+					"name": "punctuation.section.group.begin.pseudoglossa",
+					"match": "\\("
+				},
+				{
+					"name": "punctuation.section.group.end.pseudoglossa",
+					"match": "\\)"
+				},
+				{
+					"name": "punctuation.separator.comma.pseudoglossa",
+					"match": ","
+				},
+				{
+					"name": "punctuation.separator.colon.pseudoglossa",
+					"match": ":"
 				}
 			]
 		},
