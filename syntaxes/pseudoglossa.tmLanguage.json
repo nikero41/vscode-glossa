@@ -8,12 +8,15 @@
 		{ "include": "#program-structure" },
 		{ "include": "#subprograms" },
 		{ "include": "#control-keywords" },
+		{ "include": "#enhanced-flow-control" },
 		{ "include": "#io-keywords" },
 		{ "include": "#operators" },
 		{ "include": "#booleans" },
 		{ "include": "#types" },
 		{ "include": "#numbers" },
 		{ "include": "#builtin-functions" },
+		{ "include": "#enhanced-functions" },
+		{ "include": "#enhanced-screen-execution" },
 		{ "include": "#function-call" },
 		{ "include": "#punctuation" },
 		{ "include": "#identifiers" }
@@ -31,13 +34,21 @@
 			"patterns": [
 				{
 					"name": "string.quoted.single.pseudoglossa",
-					"begin": "'",
-					"end": "'"
+					"match": "(')([^'\\n]*)(')",
+					"captures": {
+						"1": { "name": "punctuation.definition.string.begin.pseudoglossa" },
+						"2": { "name": "string.quoted.single.pseudoglossa" },
+						"3": { "name": "punctuation.definition.string.end.pseudoglossa" }
+					}
 				},
 				{
-					"name": "string.quoted.single.pseudoglossa",
-					"begin": "‘",
-					"end": "’"
+					"name": "string.quoted.single.curly.pseudoglossa",
+					"match": "(‘)([^’\\n]*)(’)",
+					"captures": {
+						"1": { "name": "punctuation.definition.string.begin.pseudoglossa" },
+						"2": { "name": "string.quoted.single.curly.pseudoglossa" },
+						"3": { "name": "punctuation.definition.string.end.pseudoglossa" }
+					}
 				}
 			]
 		},
@@ -109,6 +120,14 @@
 				}
 			]
 		},
+		"enhanced-flow-control": {
+			"patterns": [
+				{
+					"name": "keyword.control.flow.termination.pseudoglossa",
+					"match": "\\b(ΤΕΡΜΑΤΙΣΜΟΣ|ΚΛΕΙΣΕ_ΠΑΡΑΘΥΡΟ|ΕΞΟΔΟΣ)\\b"
+				}
+			]
+		},
 		"io-keywords": {
 			"patterns": [
 				{
@@ -174,6 +193,34 @@
 				{
 					"name": "support.function.builtin.pseudoglossa",
 					"match": "\\b(ΗΜ|ΣΥΝ|ΕΦ|Τ_Ρ|Α_Μ|Α_Τ|ΛΟΓ|Ε)(?=\\s*\\()"
+				}
+			]
+		},
+		"enhanced-functions": {
+			"patterns": [
+				{
+					"name": "support.function.builtin.pseudoglossa",
+					"match": "\\b(ΤΥΧΑΙΟΣ|ΣΤΡΟΓΓ|Κ_Μ)(?=\\s*\\()"
+				},
+				{
+					"name": "support.function.builtin.pseudoglossa",
+					"match": "\\b(ΜΗΚΟΣ_ΧΑΡ|ΣΕΙΡΑ_ΧΑΡ|ΧΑΡ)(?=\\s*\\()"
+				}
+			]
+		},
+		"enhanced-screen-execution": {
+			"patterns": [
+				{
+					"name": "keyword.control.execution.pseudoglossa",
+					"match": "\\b(ΣΕΙΡΙΑΚΗ_ΕΚΤΕΛΕΣΗ|ΠΑΡΑΛΛΗΛΗ_ΕΚΤΕΛΕΣΗ|ΕΚΤΕΛΕΣΕ)\\b"
+				},
+				{
+					"name": "support.function.screen.pseudoglossa",
+					"match": "\\b(ΚΑΘΑΡΙΣΕ_ΟΘΟΝΗ|ΠΗΓΑΙΝΕ_ΧΥ)\\b"
+				},
+				{
+					"name": "support.variable.screen.pseudoglossa",
+					"match": "\\b(ΘΕΣΗ_Χ|ΘΕΣΗ_Υ)\\b"
 				}
 			]
 		},
