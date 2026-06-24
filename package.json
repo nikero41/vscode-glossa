@@ -8,7 +8,11 @@
 		"lint": "concurrently --group --names oxc,types -c=#ea580c,#307fe2 --success=all \"npm:lint:oxc --silent\" \"npm:lint:ts --silent\"",
 		"lint:oxc": "oxlint",
 		"lint:ts": "tsc --noEmit",
+		"build:grammar": "tsx src/generators/textmate/build.ts",
 		"fmt": "oxfmt",
+		"test": "npm run build:grammar && vscode-tmgrammar-test \"test/**/*.syntax-test.psg\"",
+		"test:snap": "vscode-tmgrammar-snap \"example_files/**/*.psg\"",
+		"test:snap:update": "vscode-tmgrammar-snap --updateSnapshot \"example_files/**/*.psg\""
 	},
 	"engines": {
 		"vscode": "^1.120.0"
@@ -50,7 +54,9 @@
 		"oxfmt": "^0.54.0",
 		"oxlint": "^1.69.0",
 		"oxlint-tsgolint": "^0.23.0",
+		"tsx": "^4.21.0",
 		"typescript": "^6.0.3",
+		"vscode-tmgrammar-test": "^0.1.3"
 	},
 	"allowScripts": {
 		"fsevents@2.3.3": true

@@ -1,0 +1,49 @@
+! SYNTAX TEST "source.psg" "enhanced Pseudoglossa grammar"
+
+ΕΚΤΕΛΕΣΕ 'NOTEPAD.EXE'
+! <------ keyword.control.execution.pseudoglossa
+
+ΣΕΙΡΙΑΚΗ_ΕΚΤΕΛΕΣΗ
+! <---------------- keyword.control.execution.pseudoglossa
+
+ΠΑΡΑΛΛΗΛΗ_ΕΚΤΕΛΕΣΗ
+! <----------------- keyword.control.execution.pseudoglossa
+
+ΚΑΘΑΡΙΣΕ_ΟΘΟΝΗ
+! <------------- support.function.screen.pseudoglossa
+
+ΠΗΓΑΙΝΕ_ΧΥ 10, 5
+! <--------- support.function.screen.pseudoglossa
+
+ΘΕΣΗ_Χ
+! <----- support.variable.screen.pseudoglossa
+
+ΘΕΣΗ_Υ
+! <----- support.variable.screen.pseudoglossa
+
+ΤΥΧΑΙΟΣ(100)
+! <------ support.function.builtin.pseudoglossa
+
+ΣΤΡΟΓΓ(4.96)
+! <----- support.function.builtin.pseudoglossa
+
+Κ_Μ(2.75)
+! <-- support.function.builtin.pseudoglossa
+
+ΜΗΚΟΣ_ΧΑΡ(κείμενο)
+! <-------- support.function.builtin.pseudoglossa
+
+ΧΑΡ(65)
+! <-- support.function.builtin.pseudoglossa
+
+ΣΕΙΡΑ_ΧΑΡ('Α')
+! <-------- support.function.builtin.pseudoglossa
+
+ΕΞΟΔΟΣ
+! <--- keyword.control.flow.termination.pseudoglossa
+
+ΤΕΡΜΑΤΙΣΜΟΣ
+! <--------- keyword.control.flow.termination.pseudoglossa
+
+ΚΛΕΙΣΕ_ΠΑΡΑΘΥΡΟ
+! <-------------- keyword.control.flow.termination.pseudoglossa

@@ -1,0 +1,64 @@
+! SYNTAX TEST "source.psg" "basic Pseudoglossa grammar"
+
+! σχόλιο
+! <------ comment.line.exclamation.pseudoglossa
+
+'γειά'
+! <- punctuation.definition.string.begin.pseudoglossa
+
+ΑΝ α > 0 ΤΟΤΕ
+! <- keyword.control.conditional.pseudoglossa
+
+ΤΟΤΕ
+! <--- keyword.control.conditional.pseudoglossa
+
+ΓΡΑΨΕ_ 'μήνυμα'
+! <----- support.function.io.pseudoglossa
+
+ΠΕΡΙΠΤΩΣΗ ΑΛΛΙΩΣ
+! <-------- keyword.control.switch.pseudoglossa
+
+ΑΛΛΙΩΣ
+! <----- keyword.control.conditional.pseudoglossa
+
+..
+! < keyword.operator.range.pseudoglossa
+
+<--
+! <-- keyword.operator.assignment.pseudoglossa
+
+^
+! < keyword.operator.arithmetic.pseudoglossa
+
+3.14
+! <--- constant.numeric.float.pseudoglossa
+
+ΑΛΗΘΗΣ
+! <----- constant.language.boolean.pseudoglossa
+
+[
+! < punctuation.definition.array.begin.pseudoglossa
+
+,
+! < punctuation.separator.comma.pseudoglossa
+
+]
+! < punctuation.definition.array.end.pseudoglossa
+
+ΔΙΑΔΙΚΑΣΙΑ Διπλασίασε(τιμή)
+! <--------- keyword.other.subprogram.pseudoglossa
+
+ΣΥΝΑΡΤΗΣΗ Κύβος(τιμή): ΑΚΕΡΑΙΑ
+! <------- keyword.other.subprogram.pseudoglossa
+
+ΑΚΕΡΑΙΑ
+! <------ storage.type.pseudoglossa
+
+ΚΑΛΕΣΕ Διπλασίασε(α)
+! <---- keyword.other.subprogram.pseudoglossa
+
+ΗΜ(x)
+! < support.function.builtin.pseudoglossa
+
+Κύβος(β)
+! <---- entity.name.function.call.pseudoglossa
