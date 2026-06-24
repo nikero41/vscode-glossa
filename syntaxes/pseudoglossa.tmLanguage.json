@@ -24,10 +24,7 @@
 	"repository": {
 		"comments": {
 			"patterns": [
-				{
-					"name": "comment.line.exclamation.pseudoglossa",
-					"match": "!.*$"
-				}
+				{ "name": "comment.line.exclamation.pseudoglossa", "match": "!.*$" }
 			]
 		},
 		"strings": {
@@ -146,10 +143,7 @@
 					"name": "keyword.operator.assignment.pseudoglossa",
 					"match": "(<--|<-|←)"
 				},
-				{
-					"name": "keyword.operator.range.pseudoglossa",
-					"match": "\\.\\."
-				},
+				{ "name": "keyword.operator.range.pseudoglossa", "match": "(\\.\\.)" },
 				{
 					"name": "keyword.operator.comparison.pseudoglossa",
 					"match": "(<=|>=|<>|=|<|>)"
@@ -192,7 +186,7 @@
 			"patterns": [
 				{
 					"name": "support.function.builtin.pseudoglossa",
-					"match": "\\b(ΗΜ|ΣΥΝ|ΕΦ|Τ_Ρ|Α_Μ|Α_Τ|ΛΟΓ|Ε)(?=\\s*\\()"
+					"match": "\\b(ΗΜ|ΣΥΝ|ΕΦ|Τ_Ρ|Α_Μ|Α_Τ|ΛΟΓ|Ε)\\b(?=\\s*\\()"
 				}
 			]
 		},
@@ -200,11 +194,11 @@
 			"patterns": [
 				{
 					"name": "support.function.builtin.pseudoglossa",
-					"match": "\\b(ΤΥΧΑΙΟΣ|ΣΤΡΟΓΓ|Κ_Μ)(?=\\s*\\()"
+					"match": "\\b(ΤΥΧΑΙΟΣ|ΣΤΡΟΓΓ|Κ_Μ)\\b(?=\\s*\\()"
 				},
 				{
 					"name": "support.function.builtin.pseudoglossa",
-					"match": "\\b(ΜΗΚΟΣ_ΧΑΡ|ΣΕΙΡΑ_ΧΑΡ|ΧΑΡ)(?=\\s*\\()"
+					"match": "\\b(ΜΗΚΟΣ_ΧΑΡ|ΣΕΙΡΑ_ΧΑΡ|ΧΑΡ)\\b(?=\\s*\\()"
 				}
 			]
 		},
@@ -250,14 +244,8 @@
 					"name": "punctuation.section.group.end.pseudoglossa",
 					"match": "\\)"
 				},
-				{
-					"name": "punctuation.separator.comma.pseudoglossa",
-					"match": ","
-				},
-				{
-					"name": "punctuation.separator.colon.pseudoglossa",
-					"match": ":"
-				}
+				{ "name": "punctuation.separator.comma.pseudoglossa", "match": "," },
+				{ "name": "punctuation.separator.colon.pseudoglossa", "match": ":" }
 			]
 		},
 		"identifiers": {
