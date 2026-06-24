@@ -31,11 +31,11 @@
 		"lint": "concurrently --group --names oxc,types -c=#ea580c,#307fe2 --success=all \"npm:lint:oxc --silent\" \"npm:lint:ts --silent\"",
 		"lint:oxc": "oxlint",
 		"lint:ts": "tsc --noEmit",
-		"build:grammar": "tsx src/generators/textmate/build.ts",
+		"build": "tsx src/generators/textmate/build.ts",
 		"fmt": "oxfmt",
-		"test": "npm run build:grammar && vscode-tmgrammar-test \"test/**/*.syntax-test.psg\"",
-		"test:snap": "vscode-tmgrammar-snap \"example_files/**/*.psg\"",
-		"test:snap:update": "vscode-tmgrammar-snap --updateSnapshot \"example_files/**/*.psg\""
+		"test": "npm run build:grammar && vscode-tmgrammar-test \"test/**/*.syntax-test.{psg,glo}\"",
+		"test:snap": "vscode-tmgrammar-snap \"example_files/**/*.{psg,glo}\"",
+		"test:snap:update": "vscode-tmgrammar-snap --updateSnapshot \"example_files/**/*.{psg,glo}\""
 	},
 	"engines": {
 		"vscode": "^1.120.0"
