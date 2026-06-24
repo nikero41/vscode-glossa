@@ -1,9 +1,30 @@
 {
-	"name": "pseudoglossa-language-support",
-	"displayName": "Pseudoglossa Language Support",
-	"description": "",
+	"name": "vscode-glossa",
+	"displayName": "Υποστήριξη ΓΛΩΣΣΑΣ",
+	"description": "Υποστήριξη για τη γλώσσα ΓΛΩΣΣΑ στο Visual Studio Code, με χρωματισμό σύνταξης.",
 	"version": "0.0.1",
 	"type": "module",
+	"license": "MIT",
+	"publisher": "nikero",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/nikero/vscode-glossa"
+	},
+	"homepage": "https://glossomathia.gr",
+	"keywords": [
+		"ΓΛΩΣΣΑ",
+		"ΓΛΩΣΣΟΜΑΘΕΙΑ",
+		"γλωσσομαθεια",
+		"γλωσσα",
+		"προγραμματισμός"
+	],
+	"qna": "marketplace",
+	"preview": true,
+	"files": [
+		"language-configuration.json",
+		"syntaxes",
+		"README.md"
+	],
 	"scripts": {
 		"lint": "concurrently --group --names oxc,types -c=#ea580c,#307fe2 --success=all \"npm:lint:oxc --silent\" \"npm:lint:ts --silent\"",
 		"lint:oxc": "oxlint",
@@ -23,22 +44,25 @@
 	"contributes": {
 		"languages": [
 			{
-				"id": "pseudoglossa",
+				"id": "glossomathia",
 				"aliases": [
-					"Pseudoglossa",
-					"pseudoglossa"
+					"ΓΛΩΣΣΑ",
+					"ΓΛΩΣΣΟΜΑΘΕΙΑ",
+					"γλωσσομαθεια",
+					"γλωσσα"
 				],
 				"extensions": [
-					".psg"
+					".psg",
+					".glo"
 				],
 				"configuration": "./language-configuration.json"
 			}
 		],
 		"grammars": [
 			{
-				"language": "pseudoglossa",
+				"language": "glosomathia",
 				"scopeName": "source.psg",
-				"path": "./syntaxes/pseudoglossa.tmLanguage.json"
+				"path": "./syntaxes/glossomathia.tmLanguage.json"
 			}
 		]
 	},
