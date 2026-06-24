@@ -1,0 +1,39 @@
+>! Παράδειγμα αρχείου ΓΛΩΣΣΑΣ με κατάληξη .gls
+#^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ source.psg comment.line.exclamation.glossomathia
+>
+>ΠΡΟΓΡΑΜΜΑ Παράδειγμα_GLS
+#^^^^^^^^^ source.psg keyword.other.program.glossomathia
+#         ^ source.psg
+#          ^^^^^^^^^^^^^^ source.psg variable.other.glossomathia
+>
+>ΜΕΤΑΒΛΗΤΕΣ
+#^^^^^^^^^^ source.psg keyword.other.program.glossomathia
+>  ΑΚΕΡΑΙΕΣ: αριθμός
+#^^ source.psg
+#  ^^^^^^^^ source.psg storage.type.glossomathia
+#          ^ source.psg punctuation.separator.colon.glossomathia
+#           ^ source.psg
+#            ^^^^^^^ source.psg variable.other.glossomathia
+>
+>ΑΡΧΗ
+#^^^^ source.psg keyword.other.program.glossomathia
+>  αριθμός <-- 1
+#^^ source.psg
+#  ^^^^^^^ source.psg variable.other.glossomathia
+#         ^ source.psg
+#          ^^^ source.psg keyword.operator.assignment.glossomathia
+#             ^ source.psg
+#              ^ source.psg constant.numeric.integer.glossomathia
+>  ΓΡΑΨΕ 'Αρχείο .gls'
+#^^ source.psg
+#  ^^^^^ source.psg support.function.io.glossomathia
+#       ^ source.psg
+#        ^ source.psg string.quoted.single.glossomathia punctuation.definition.string.begin.glossomathia
+#         ^^^^^^^^^^^ source.psg string.quoted.single.glossomathia string.quoted.single.glossomathia
+#                    ^ source.psg string.quoted.single.glossomathia punctuation.definition.string.end.glossomathia
+>
+>ΤΕΛΟΣ_ΠΡΟΓΡΑΜΜΑΤΟΣ Παράδειγμα_GLS
+#^^^^^^^^^^^^^^^^^^ source.psg keyword.other.program.glossomathia
+#                  ^ source.psg
+#                   ^^^^^^^^^^^^^^ source.psg variable.other.glossomathia
+>

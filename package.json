@@ -40,9 +40,9 @@
 		"lint:ts": "tsc --noEmit",
 		"build": "tsx src/generators/textmate/build.ts",
 		"fmt": "oxfmt",
-		"test": "npm run build:grammar && vscode-tmgrammar-test \"test/**/*.syntax-test.{psg,glo}\"",
-		"test:snap": "vscode-tmgrammar-snap \"example_files/**/*.{psg,glo}\"",
-		"test:snap:update": "vscode-tmgrammar-snap --updateSnapshot \"example_files/**/*.{psg,glo}\""
+		"test": "npm run build && vscode-tmgrammar-test \"test/**/*.syntax-test.{psg,glo,gls}\"",
+		"test:snap": "vscode-tmgrammar-snap \"example_files/**/*.{psg,glo,gls}\"",
+		"test:snap:update": "vscode-tmgrammar-snap --updateSnapshot \"example_files/**/*.{psg,glo,gls}\""
 	},
 	"engines": {
 		"vscode": "^1.120.0"
@@ -62,7 +62,8 @@
 				],
 				"extensions": [
 					".psg",
-					".glo"
+					".glo",
+					".gls"
 				],
 				"configuration": "./language-configuration.json"
 			}

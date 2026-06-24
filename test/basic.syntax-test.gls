@@ -1,0 +1,13 @@
+! SYNTAX TEST "source.psg" "basic ΓΛΩΣΣΑ .gls syntax"
+
+! σχόλιο σε αρχείο .gls
+! <------ comment.line.exclamation.glossomathia
+
+ΠΡΟΓΡΑΜΜΑ Παράδειγμα_GLS
+! <-------- keyword.other.program.glossomathia
+
+ΓΡΑΨΕ 'μήνυμα'
+! <---- support.function.io.glossomathia
+
+<--
+! <-- keyword.operator.assignment.glossomathia
