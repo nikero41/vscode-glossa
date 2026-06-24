@@ -1,0 +1,69 @@
+>! Παράδειγμα αρχείου ΓΛΩΣΣΑΣ με κατάληξη .glo
+#^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ source.psg comment.line.exclamation.glossomathia
+>
+>ΠΡΟΓΡΑΜΜΑ Παράδειγμα_GLO
+#^^^^^^^^^ source.psg keyword.other.program.glossomathia
+#         ^ source.psg
+#          ^^^^^^^^^^^^^^ source.psg variable.other.glossomathia
+>
+>ΜΕΤΑΒΛΗΤΕΣ
+#^^^^^^^^^^ source.psg keyword.other.program.glossomathia
+>  ΑΚΕΡΑΙΕΣ: αριθμός
+#^^ source.psg
+#  ^^^^^^^^ source.psg storage.type.glossomathia
+#          ^ source.psg punctuation.separator.colon.glossomathia
+#           ^ source.psg
+#            ^^^^^^^ source.psg variable.other.glossomathia
+>
+>ΑΡΧΗ
+#^^^^ source.psg keyword.other.program.glossomathia
+>  ΓΡΑΨΕ 'Δώσε έναν αριθμό:'
+#^^ source.psg
+#  ^^^^^ source.psg support.function.io.glossomathia
+#       ^ source.psg
+#        ^ source.psg string.quoted.single.glossomathia punctuation.definition.string.begin.glossomathia
+#         ^^^^^^^^^^^^^^^^^ source.psg string.quoted.single.glossomathia string.quoted.single.glossomathia
+#                          ^ source.psg string.quoted.single.glossomathia punctuation.definition.string.end.glossomathia
+>  ΔΙΑΒΑΣΕ αριθμός
+#^^ source.psg
+#  ^^^^^^^ source.psg support.function.io.glossomathia
+#         ^ source.psg
+#          ^^^^^^^ source.psg variable.other.glossomathia
+>
+>  ΑΝ αριθμός > 0 ΤΟΤΕ
+#^^ source.psg
+#  ^^ source.psg keyword.control.conditional.glossomathia
+#    ^ source.psg
+#     ^^^^^^^ source.psg variable.other.glossomathia
+#            ^ source.psg
+#             ^ source.psg keyword.operator.comparison.glossomathia
+#              ^ source.psg
+#               ^ source.psg constant.numeric.integer.glossomathia
+#                ^ source.psg
+#                 ^^^^ source.psg keyword.control.conditional.glossomathia
+>    ΓΡΑΨΕ 'Θετικός αριθμός'
+#^^^^ source.psg
+#    ^^^^^ source.psg support.function.io.glossomathia
+#         ^ source.psg
+#          ^ source.psg string.quoted.single.glossomathia punctuation.definition.string.begin.glossomathia
+#           ^^^^^^^^^^^^^^^ source.psg string.quoted.single.glossomathia string.quoted.single.glossomathia
+#                          ^ source.psg string.quoted.single.glossomathia punctuation.definition.string.end.glossomathia
+>  ΑΛΛΙΩΣ
+#^^ source.psg
+#  ^^^^^^ source.psg keyword.control.conditional.glossomathia
+>    ΓΡΑΨΕ 'Μη θετικός αριθμός'
+#^^^^ source.psg
+#    ^^^^^ source.psg support.function.io.glossomathia
+#         ^ source.psg
+#          ^ source.psg string.quoted.single.glossomathia punctuation.definition.string.begin.glossomathia
+#           ^^^^^^^^^^^^^^^^^^ source.psg string.quoted.single.glossomathia string.quoted.single.glossomathia
+#                             ^ source.psg string.quoted.single.glossomathia punctuation.definition.string.end.glossomathia
+>  ΤΕΛΟΣ_ΑΝ
+#^^ source.psg
+#  ^^^^^^^^ source.psg keyword.control.conditional.glossomathia
+>
+>ΤΕΛΟΣ_ΠΡΟΓΡΑΜΜΑΤΟΣ Παράδειγμα_GLO
+#^^^^^^^^^^^^^^^^^^ source.psg keyword.other.program.glossomathia
+#                  ^ source.psg
+#                   ^^^^^^^^^^^^^^ source.psg variable.other.glossomathia
+>

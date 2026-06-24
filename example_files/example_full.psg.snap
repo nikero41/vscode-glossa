@@ -1,0 +1,1389 @@
+>! syntax coverage file for ΓλωσσοΜάθεια / Glossomathia
+#^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ source.psg comment.line.exclamation.glossomathia
+>
+>ΔΙΑΔΙΚΑΣΙΑ Διπλασίασε(τιμή)
+#^^^^^^^^^^ source.psg keyword.other.subprogram.glossomathia
+#          ^ source.psg
+#           ^^^^^^^^^^ source.psg entity.name.function.glossomathia
+#                     ^ source.psg punctuation.section.group.begin.glossomathia
+#                      ^^^^ source.psg variable.parameter.glossomathia
+#                          ^ source.psg punctuation.section.group.end.glossomathia
+>ΜΕΤΑΒΛΗΤΕΣ
+#^^^^^^^^^^ source.psg keyword.other.program.glossomathia
+>  ΑΚΕΡΑΙΕΣ: τιμή
+#^^ source.psg
+#  ^^^^^^^^ source.psg storage.type.glossomathia
+#          ^ source.psg punctuation.separator.colon.glossomathia
+#           ^ source.psg
+#            ^^^^ source.psg variable.other.glossomathia
+>ΑΡΧΗ
+#^^^^ source.psg keyword.other.program.glossomathia
+>  τιμή <- 2 * τιμή
+#^^ source.psg
+#  ^^^^ source.psg variable.other.glossomathia
+#      ^ source.psg
+#       ^^ source.psg keyword.operator.assignment.glossomathia
+#         ^ source.psg
+#          ^ source.psg constant.numeric.integer.glossomathia
+#           ^ source.psg
+#            ^ source.psg keyword.operator.arithmetic.glossomathia
+#             ^ source.psg
+#              ^^^^ source.psg variable.other.glossomathia
+>ΤΕΛΟΣ_ΔΙΑΔΙΚΑΣΙΑΣ
+#^^^^^^^^^^^^^^^^^ source.psg keyword.other.subprogram.glossomathia
+>
+>ΣΥΝΑΡΤΗΣΗ Τετράγωνο(χ): ΑΚΕΡΑΙΑ
+#^^^^^^^^^ source.psg keyword.other.subprogram.glossomathia
+#         ^ source.psg
+#          ^^^^^^^^^ source.psg entity.name.function.glossomathia
+#                   ^ source.psg punctuation.section.group.begin.glossomathia
+#                    ^ source.psg variable.parameter.glossomathia
+#                     ^ source.psg punctuation.section.group.end.glossomathia
+#                      ^ source.psg punctuation.separator.colon.glossomathia
+#                       ^ source.psg
+#                        ^^^^^^^ source.psg storage.type.glossomathia
+>ΜΕΤΑΒΛΗΤΕΣ
+#^^^^^^^^^^ source.psg keyword.other.program.glossomathia
+>  ΑΚΕΡΑΙΕΣ: χ
+#^^ source.psg
+#  ^^^^^^^^ source.psg storage.type.glossomathia
+#          ^ source.psg punctuation.separator.colon.glossomathia
+#           ^ source.psg
+#            ^ source.psg variable.other.glossomathia
+>ΑΡΧΗ
+#^^^^ source.psg keyword.other.program.glossomathia
+>  Τετράγωνο <- χ * χ
+#^^ source.psg
+#  ^^^^^^^^^ source.psg variable.other.glossomathia
+#           ^ source.psg
+#            ^^ source.psg keyword.operator.assignment.glossomathia
+#              ^ source.psg
+#               ^ source.psg variable.other.glossomathia
+#                ^ source.psg
+#                 ^ source.psg keyword.operator.arithmetic.glossomathia
+#                  ^ source.psg
+#                   ^ source.psg variable.other.glossomathia
+>ΤΕΛΟΣ_ΣΥΝΑΡΤΗΣΗΣ
+#^^^^^^^^^^^^^^^^ source.psg keyword.other.subprogram.glossomathia
+>
+>ΠΡΟΓΡΑΜΜΑ Κάλυψη_Συντακτικού
+#^^^^^^^^^ source.psg keyword.other.program.glossomathia
+#         ^ source.psg
+#          ^^^^^^^^^^^^^^^^^^ source.psg variable.other.glossomathia
+>
+>ΣΤΑΘΕΡΕΣ
+#^^^^^^^^ source.psg keyword.other.program.glossomathia
+>  ΣΤΑΘ1 = 10
+#^^ source.psg
+#  ^^^^^ source.psg variable.other.glossomathia
+#       ^ source.psg
+#        ^ source.psg keyword.operator.comparison.glossomathia
+#         ^ source.psg
+#          ^^ source.psg constant.numeric.integer.glossomathia
+>  ΣΤΑΘ2 = 3.14
+#^^ source.psg
+#  ^^^^^ source.psg variable.other.glossomathia
+#       ^ source.psg
+#        ^ source.psg keyword.operator.comparison.glossomathia
+#         ^ source.psg
+#          ^^^^ source.psg constant.numeric.float.glossomathia
+>  ΜΗΝΥΜΑ = 'γειά'
+#^^ source.psg
+#  ^^^^^^ source.psg variable.other.glossomathia
+#        ^ source.psg
+#         ^ source.psg keyword.operator.comparison.glossomathia
+#          ^ source.psg
+#           ^ source.psg string.quoted.single.glossomathia punctuation.definition.string.begin.glossomathia
+#            ^^^^ source.psg string.quoted.single.glossomathia string.quoted.single.glossomathia
+#                ^ source.psg string.quoted.single.glossomathia punctuation.definition.string.end.glossomathia
+>  ΜΗΝΥΜΑ_ΔΙΑΦΟΡΑ = 'γειά'
+#^^ source.psg
+#  ^^^^^^^^^^^^^^ source.psg variable.other.glossomathia
+#                ^ source.psg
+#                 ^ source.psg keyword.operator.comparison.glossomathia
+#                  ^ source.psg
+#                   ^ source.psg string.quoted.single.glossomathia punctuation.definition.string.begin.glossomathia
+#                    ^^^^ source.psg string.quoted.single.glossomathia string.quoted.single.glossomathia
+#                        ^ source.psg string.quoted.single.glossomathia punctuation.definition.string.end.glossomathia
+>
+>ΜΕΤΑΒΛΗΤΕΣ
+#^^^^^^^^^^ source.psg keyword.other.program.glossomathia
+>  ΑΚΕΡΑΙΕΣ: α, β, γ, i, j, κ, πλήθος, πίνακας[5], πίνακας2[3,3]
+#^^ source.psg
+#  ^^^^^^^^ source.psg storage.type.glossomathia
+#          ^ source.psg punctuation.separator.colon.glossomathia
+#           ^ source.psg
+#            ^ source.psg variable.other.glossomathia
+#             ^ source.psg punctuation.separator.comma.glossomathia
+#              ^ source.psg
+#               ^ source.psg variable.other.glossomathia
+#                ^ source.psg punctuation.separator.comma.glossomathia
+#                 ^ source.psg
+#                  ^ source.psg variable.other.glossomathia
+#                   ^ source.psg punctuation.separator.comma.glossomathia
+#                    ^ source.psg
+#                     ^ source.psg variable.other.glossomathia
+#                      ^ source.psg punctuation.separator.comma.glossomathia
+#                       ^ source.psg
+#                        ^ source.psg variable.other.glossomathia
+#                         ^ source.psg punctuation.separator.comma.glossomathia
+#                          ^ source.psg
+#                           ^ source.psg variable.other.glossomathia
+#                            ^ source.psg punctuation.separator.comma.glossomathia
+#                             ^ source.psg
+#                              ^^^^^^ source.psg variable.other.glossomathia
+#                                    ^ source.psg punctuation.separator.comma.glossomathia
+#                                     ^ source.psg
+#                                      ^^^^^^^ source.psg variable.other.glossomathia
+#                                             ^ source.psg punctuation.definition.array.begin.glossomathia
+#                                              ^ source.psg constant.numeric.integer.glossomathia
+#                                               ^ source.psg punctuation.definition.array.end.glossomathia
+#                                                ^ source.psg punctuation.separator.comma.glossomathia
+#                                                 ^ source.psg
+#                                                  ^^^^^^^^ source.psg variable.other.glossomathia
+#                                                          ^ source.psg punctuation.definition.array.begin.glossomathia
+#                                                           ^ source.psg constant.numeric.integer.glossomathia
+#                                                            ^ source.psg punctuation.separator.comma.glossomathia
+#                                                             ^ source.psg constant.numeric.integer.glossomathia
+#                                                              ^ source.psg punctuation.definition.array.end.glossomathia
+>  ΠΡΑΓΜΑΤΙΚΕΣ: x, y, z, μέσος
+#^^ source.psg
+#  ^^^^^^^^^^^ source.psg storage.type.glossomathia
+#             ^ source.psg punctuation.separator.colon.glossomathia
+#              ^ source.psg
+#               ^ source.psg variable.other.glossomathia
+#                ^ source.psg punctuation.separator.comma.glossomathia
+#                 ^ source.psg
+#                  ^ source.psg variable.other.glossomathia
+#                   ^ source.psg punctuation.separator.comma.glossomathia
+#                    ^ source.psg
+#                     ^ source.psg variable.other.glossomathia
+#                      ^ source.psg punctuation.separator.comma.glossomathia
+#                       ^ source.psg
+#                        ^^^^^ source.psg variable.other.glossomathia
+>  ΧΑΡΑΚΤΗΡΕΣ: όνομα, κείμενο
+#^^ source.psg
+#  ^^^^^^^^^^ source.psg storage.type.glossomathia
+#            ^ source.psg punctuation.separator.colon.glossomathia
+#             ^ source.psg
+#              ^^^^^ source.psg variable.other.glossomathia
+#                   ^ source.psg punctuation.separator.comma.glossomathia
+#                    ^ source.psg
+#                     ^^^^^^^ source.psg variable.other.glossomathia
+>  ΛΟΓΙΚΕΣ: σημαία
+#^^ source.psg
+#  ^^^^^^^ source.psg storage.type.glossomathia
+#         ^ source.psg punctuation.separator.colon.glossomathia
+#          ^ source.psg
+#           ^^^^^^ source.psg variable.other.glossomathia
+>  ΑΡΧΕΙΑ ΑΚΕΡΑΙΩΝ: αρχείο_ακεραίων
+#^^ source.psg
+#  ^^^^^^ source.psg variable.other.glossomathia
+#        ^ source.psg
+#         ^^^^^^^^ source.psg variable.other.glossomathia
+#                 ^ source.psg punctuation.separator.colon.glossomathia
+#                  ^ source.psg
+#                   ^^^^^^^^^^^^^^^ source.psg variable.other.glossomathia
+>  ΑΡΧΕΙΑ ΠΡΑΓΜΑΤΙΚΩΝ: αρχείο_πραγματικών
+#^^ source.psg
+#  ^^^^^^ source.psg variable.other.glossomathia
+#        ^ source.psg
+#         ^^^^^^^^^^^ source.psg variable.other.glossomathia
+#                    ^ source.psg punctuation.separator.colon.glossomathia
+#                     ^ source.psg
+#                      ^^^^^^^^^^^^^^^^^^ source.psg variable.other.glossomathia
+>  ΑΡΧΕΙΑ ΧΑΡΑΚΤΗΡΩΝ: αρχείο_κειμένου
+#^^ source.psg
+#  ^^^^^^ source.psg variable.other.glossomathia
+#        ^ source.psg
+#         ^^^^^^^^^^ source.psg variable.other.glossomathia
+#                   ^ source.psg punctuation.separator.colon.glossomathia
+#                    ^ source.psg
+#                     ^^^^^^^^^^^^^^^ source.psg variable.other.glossomathia
+>  ΑΡΧΕΙΑ ΛΟΓΙΚΩΝ: αρχείο_λογικών
+#^^ source.psg
+#  ^^^^^^ source.psg variable.other.glossomathia
+#        ^ source.psg
+#         ^^^^^^^ source.psg variable.other.glossomathia
+#                ^ source.psg punctuation.separator.colon.glossomathia
+#                 ^ source.psg
+#                  ^^^^^^^^^^^^^^ source.psg variable.other.glossomathia
+>
+>ΑΡΧΗ
+#^^^^ source.psg keyword.other.program.glossomathia
+>  ! εκχώρηση
+#^^ source.psg
+#  ^^^^^^^^^^ source.psg comment.line.exclamation.glossomathia
+>  α <- 5
+#^^ source.psg
+#  ^ source.psg variable.other.glossomathia
+#   ^ source.psg
+#    ^^ source.psg keyword.operator.assignment.glossomathia
+#      ^ source.psg
+#       ^ source.psg constant.numeric.integer.glossomathia
+>  β <- 2
+#^^ source.psg
+#  ^ source.psg variable.other.glossomathia
+#   ^ source.psg
+#    ^^ source.psg keyword.operator.assignment.glossomathia
+#      ^ source.psg
+#       ^ source.psg constant.numeric.integer.glossomathia
+>  γ <- α + β
+#^^ source.psg
+#  ^ source.psg variable.other.glossomathia
+#   ^ source.psg
+#    ^^ source.psg keyword.operator.assignment.glossomathia
+#      ^ source.psg
+#       ^ source.psg variable.other.glossomathia
+#        ^ source.psg
+#         ^ source.psg keyword.operator.arithmetic.glossomathia
+#          ^ source.psg
+#           ^ source.psg variable.other.glossomathia
+>  x <- 4.5
+#^^ source.psg
+#  ^ source.psg variable.other.glossomathia
+#   ^ source.psg
+#    ^^ source.psg keyword.operator.assignment.glossomathia
+#      ^ source.psg
+#       ^^^ source.psg constant.numeric.float.glossomathia
+>  y <- 2.0
+#^^ source.psg
+#  ^ source.psg variable.other.glossomathia
+#   ^ source.psg
+#    ^^ source.psg keyword.operator.assignment.glossomathia
+#      ^ source.psg
+#       ^^^ source.psg constant.numeric.float.glossomathia
+>  z <- x / y
+#^^ source.psg
+#  ^ source.psg variable.other.glossomathia
+#   ^ source.psg
+#    ^^ source.psg keyword.operator.assignment.glossomathia
+#      ^ source.psg
+#       ^ source.psg variable.other.glossomathia
+#        ^ source.psg
+#         ^ source.psg keyword.operator.arithmetic.glossomathia
+#          ^ source.psg
+#           ^ source.psg variable.other.glossomathia
+>  όνομα <- 'Σταύρος'
+#^^ source.psg
+#  ^^^^^ source.psg variable.other.glossomathia
+#       ^ source.psg
+#        ^^ source.psg keyword.operator.assignment.glossomathia
+#          ^ source.psg
+#           ^ source.psg string.quoted.single.glossomathia punctuation.definition.string.begin.glossomathia
+#            ^^^^^^^ source.psg string.quoted.single.glossomathia string.quoted.single.glossomathia
+#                   ^ source.psg string.quoted.single.glossomathia punctuation.definition.string.end.glossomathia
+>  κείμενο <- 'δοκιμή'
+#^^ source.psg
+#  ^^^^^^^ source.psg variable.other.glossomathia
+#         ^ source.psg
+#          ^^ source.psg keyword.operator.assignment.glossomathia
+#            ^ source.psg
+#             ^ source.psg string.quoted.single.glossomathia punctuation.definition.string.begin.glossomathia
+#              ^^^^^^ source.psg string.quoted.single.glossomathia string.quoted.single.glossomathia
+#                    ^ source.psg string.quoted.single.glossomathia punctuation.definition.string.end.glossomathia
+>  σημαία <- ΑΛΗΘΗΣ
+#^^ source.psg
+#  ^^^^^^ source.psg variable.other.glossomathia
+#        ^ source.psg
+#         ^^ source.psg keyword.operator.assignment.glossomathia
+#           ^ source.psg
+#            ^^^^^^ source.psg constant.language.boolean.glossomathia
+>
+>  ! είσοδος
+#^^ source.psg
+#  ^^^^^^^^^ source.psg comment.line.exclamation.glossomathia
+>  ΔΙΑΒΑΣΕ α, β, x, όνομα
+#^^ source.psg
+#  ^^^^^^^ source.psg support.function.io.glossomathia
+#         ^ source.psg
+#          ^ source.psg variable.other.glossomathia
+#           ^ source.psg punctuation.separator.comma.glossomathia
+#            ^ source.psg
+#             ^ source.psg variable.other.glossomathia
+#              ^ source.psg punctuation.separator.comma.glossomathia
+#               ^ source.psg
+#                ^ source.psg variable.other.glossomathia
+#                 ^ source.psg punctuation.separator.comma.glossomathia
+#                  ^ source.psg
+#                   ^^^^^ source.psg variable.other.glossomathia
+>
+>  ! έξοδος
+#^^ source.psg
+#  ^^^^^^^^ source.psg comment.line.exclamation.glossomathia
+>  ΓΡΑΨΕ 'Έλεγχος ΓΡΑΨΕ'
+#^^ source.psg
+#  ^^^^^ source.psg support.function.io.glossomathia
+#       ^ source.psg
+#        ^ source.psg string.quoted.single.glossomathia punctuation.definition.string.begin.glossomathia
+#         ^^^^^^^^^^^^^ source.psg string.quoted.single.glossomathia string.quoted.single.glossomathia
+#                      ^ source.psg string.quoted.single.glossomathia punctuation.definition.string.end.glossomathia
+>  ΓΡΑΨΕ α, β, x, όνομα
+#^^ source.psg
+#  ^^^^^ source.psg support.function.io.glossomathia
+#       ^ source.psg
+#        ^ source.psg variable.other.glossomathia
+#         ^ source.psg punctuation.separator.comma.glossomathia
+#          ^ source.psg
+#           ^ source.psg variable.other.glossomathia
+#            ^ source.psg punctuation.separator.comma.glossomathia
+#             ^ source.psg
+#              ^ source.psg variable.other.glossomathia
+#               ^ source.psg punctuation.separator.comma.glossomathia
+#                ^ source.psg
+#                 ^^^^^ source.psg variable.other.glossomathia
+>  ΓΡΑΨΕ α + β, x / y, 'τέλος γραμμής'
+#^^ source.psg
+#  ^^^^^ source.psg support.function.io.glossomathia
+#       ^ source.psg
+#        ^ source.psg variable.other.glossomathia
+#         ^ source.psg
+#          ^ source.psg keyword.operator.arithmetic.glossomathia
+#           ^ source.psg
+#            ^ source.psg variable.other.glossomathia
+#             ^ source.psg punctuation.separator.comma.glossomathia
+#              ^ source.psg
+#               ^ source.psg variable.other.glossomathia
+#                ^ source.psg
+#                 ^ source.psg keyword.operator.arithmetic.glossomathia
+#                  ^ source.psg
+#                   ^ source.psg variable.other.glossomathia
+#                    ^ source.psg punctuation.separator.comma.glossomathia
+#                     ^ source.psg
+#                      ^ source.psg string.quoted.single.glossomathia punctuation.definition.string.begin.glossomathia
+#                       ^^^^^^^^^^^^^ source.psg string.quoted.single.glossomathia string.quoted.single.glossomathia
+#                                    ^ source.psg string.quoted.single.glossomathia punctuation.definition.string.end.glossomathia
+>  ΓΡΑΨΕ_ 'Έλεγχος '
+#^^ source.psg
+#  ^^^^^^ source.psg support.function.io.glossomathia
+#        ^ source.psg
+#         ^ source.psg string.quoted.single.glossomathia punctuation.definition.string.begin.glossomathia
+#          ^^^^^^^^ source.psg string.quoted.single.glossomathia string.quoted.single.glossomathia
+#                  ^ source.psg string.quoted.single.glossomathia punctuation.definition.string.end.glossomathia
+>  ΓΡΑΨΕ_ 'ΓΡΑΨΕ_ '
+#^^ source.psg
+#  ^^^^^^ source.psg support.function.io.glossomathia
+#        ^ source.psg
+#         ^ source.psg string.quoted.single.glossomathia punctuation.definition.string.begin.glossomathia
+#          ^^^^^^^ source.psg string.quoted.single.glossomathia string.quoted.single.glossomathia
+#                 ^ source.psg string.quoted.single.glossomathia punctuation.definition.string.end.glossomathia
+>  ΓΡΑΨΕ 'ολοκληρώθηκε'
+#^^ source.psg
+#  ^^^^^ source.psg support.function.io.glossomathia
+#       ^ source.psg
+#        ^ source.psg string.quoted.single.glossomathia punctuation.definition.string.begin.glossomathia
+#         ^^^^^^^^^^^^ source.psg string.quoted.single.glossomathia string.quoted.single.glossomathia
+#                     ^ source.psg string.quoted.single.glossomathia punctuation.definition.string.end.glossomathia
+>
+>  ! DIV / MOD
+#^^ source.psg
+#  ^^^^^^^^^^^ source.psg comment.line.exclamation.glossomathia
+>  γ <- α DIV β
+#^^ source.psg
+#  ^ source.psg variable.other.glossomathia
+#   ^ source.psg
+#    ^^ source.psg keyword.operator.assignment.glossomathia
+#      ^ source.psg
+#       ^ source.psg variable.other.glossomathia
+#        ^ source.psg
+#         ^^^ source.psg keyword.operator.word.glossomathia
+#            ^ source.psg
+#             ^ source.psg variable.other.glossomathia
+>  κ <- α MOD β
+#^^ source.psg
+#  ^ source.psg variable.other.glossomathia
+#   ^ source.psg
+#    ^^ source.psg keyword.operator.assignment.glossomathia
+#      ^ source.psg
+#       ^ source.psg variable.other.glossomathia
+#        ^ source.psg
+#         ^^^ source.psg keyword.operator.word.glossomathia
+#            ^ source.psg
+#             ^ source.psg variable.other.glossomathia
+>  ΓΡΑΨΕ γ, κ
+#^^ source.psg
+#  ^^^^^ source.psg support.function.io.glossomathia
+#       ^ source.psg
+#        ^ source.psg variable.other.glossomathia
+#         ^ source.psg punctuation.separator.comma.glossomathia
+#          ^ source.psg
+#           ^ source.psg variable.other.glossomathia
+>
+>  ! ΑΝ / ΑΛΛΙΩΣ_ΑΝ / ΑΛΛΙΩΣ / ΤΕΛΟΣ_ΑΝ
+#^^ source.psg
+#  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ source.psg comment.line.exclamation.glossomathia
+>  ΑΝ α < β ΤΟΤΕ
+#^^ source.psg
+#  ^^ source.psg keyword.control.conditional.glossomathia
+#    ^ source.psg
+#     ^ source.psg variable.other.glossomathia
+#      ^ source.psg
+#       ^ source.psg keyword.operator.comparison.glossomathia
+#        ^ source.psg
+#         ^ source.psg variable.other.glossomathia
+#          ^ source.psg
+#           ^^^^ source.psg keyword.control.conditional.glossomathia
+>    ΓΡΑΨΕ 'α < β'
+#^^^^ source.psg
+#    ^^^^^ source.psg support.function.io.glossomathia
+#         ^ source.psg
+#          ^ source.psg string.quoted.single.glossomathia punctuation.definition.string.begin.glossomathia
+#           ^^^^^ source.psg string.quoted.single.glossomathia string.quoted.single.glossomathia
+#                ^ source.psg string.quoted.single.glossomathia punctuation.definition.string.end.glossomathia
+>  ΑΛΛΙΩΣ_ΑΝ α = β ΤΟΤΕ
+#^^ source.psg
+#  ^^^^^^^^^ source.psg keyword.control.conditional.glossomathia
+#           ^ source.psg
+#            ^ source.psg variable.other.glossomathia
+#             ^ source.psg
+#              ^ source.psg keyword.operator.comparison.glossomathia
+#               ^ source.psg
+#                ^ source.psg variable.other.glossomathia
+#                 ^ source.psg
+#                  ^^^^ source.psg keyword.control.conditional.glossomathia
+>    ΓΡΑΨΕ 'α = β'
+#^^^^ source.psg
+#    ^^^^^ source.psg support.function.io.glossomathia
+#         ^ source.psg
+#          ^ source.psg string.quoted.single.glossomathia punctuation.definition.string.begin.glossomathia
+#           ^^^^^ source.psg string.quoted.single.glossomathia string.quoted.single.glossomathia
+#                ^ source.psg string.quoted.single.glossomathia punctuation.definition.string.end.glossomathia
+>  ΑΛΛΙΩΣ
+#^^ source.psg
+#  ^^^^^^ source.psg keyword.control.conditional.glossomathia
+>    ΓΡΑΨΕ 'α > β'
+#^^^^ source.psg
+#    ^^^^^ source.psg support.function.io.glossomathia
+#         ^ source.psg
+#          ^ source.psg string.quoted.single.glossomathia punctuation.definition.string.begin.glossomathia
+#           ^^^^^ source.psg string.quoted.single.glossomathia string.quoted.single.glossomathia
+#                ^ source.psg string.quoted.single.glossomathia punctuation.definition.string.end.glossomathia
+>  ΤΕΛΟΣ_ΑΝ
+#^^ source.psg
+#  ^^^^^^^^ source.psg keyword.control.conditional.glossomathia
+>
+>  ! ΕΠΙΛΕΞΕ / ΠΕΡΙΠΤΩΣΗ / ΠΕΡΙΠΤΩΣΗ ΑΛΛΙΩΣ / ΤΕΛΟΣ_ΕΠΙΛΟΓΩΝ
+#^^ source.psg
+#  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ source.psg comment.line.exclamation.glossomathia
+>  ΕΠΙΛΕΞΕ α
+#^^ source.psg
+#  ^^^^^^^ source.psg keyword.control.switch.glossomathia
+#         ^ source.psg
+#          ^ source.psg variable.other.glossomathia
+>    ΠΕΡΙΠΤΩΣΗ 1
+#^^^^ source.psg
+#    ^^^^^^^^^ source.psg keyword.control.switch.glossomathia
+#             ^ source.psg
+#              ^ source.psg constant.numeric.integer.glossomathia
+>      ΓΡΑΨΕ 'ένα'
+#^^^^^^ source.psg
+#      ^^^^^ source.psg support.function.io.glossomathia
+#           ^ source.psg
+#            ^ source.psg string.quoted.single.glossomathia punctuation.definition.string.begin.glossomathia
+#             ^^^ source.psg string.quoted.single.glossomathia string.quoted.single.glossomathia
+#                ^ source.psg string.quoted.single.glossomathia punctuation.definition.string.end.glossomathia
+>    ΠΕΡΙΠΤΩΣΗ 2, 3
+#^^^^ source.psg
+#    ^^^^^^^^^ source.psg keyword.control.switch.glossomathia
+#             ^ source.psg
+#              ^ source.psg constant.numeric.integer.glossomathia
+#               ^ source.psg punctuation.separator.comma.glossomathia
+#                ^ source.psg
+#                 ^ source.psg constant.numeric.integer.glossomathia
+>      ΓΡΑΨΕ 'δύο ή τρία'
+#^^^^^^ source.psg
+#      ^^^^^ source.psg support.function.io.glossomathia
+#           ^ source.psg
+#            ^ source.psg string.quoted.single.glossomathia punctuation.definition.string.begin.glossomathia
+#             ^^^^^^^^^^ source.psg string.quoted.single.glossomathia string.quoted.single.glossomathia
+#                       ^ source.psg string.quoted.single.glossomathia punctuation.definition.string.end.glossomathia
+>    ΠΕΡΙΠΤΩΣΗ ΑΛΛΙΩΣ
+#^^^^ source.psg
+#    ^^^^^^^^^ source.psg keyword.control.switch.glossomathia
+#             ^ source.psg
+#              ^^^^^^ source.psg keyword.control.default.glossomathia
+>      ΓΡΑΨΕ 'άλλη τιμή'
+#^^^^^^ source.psg
+#      ^^^^^ source.psg support.function.io.glossomathia
+#           ^ source.psg
+#            ^ source.psg string.quoted.single.glossomathia punctuation.definition.string.begin.glossomathia
+#             ^^^^^^^^^ source.psg string.quoted.single.glossomathia string.quoted.single.glossomathia
+#                      ^ source.psg string.quoted.single.glossomathia punctuation.definition.string.end.glossomathia
+>  ΤΕΛΟΣ_ΕΠΙΛΟΓΩΝ
+#^^ source.psg
+#  ^^^^^^^^^^^^^^ source.psg keyword.control.switch.glossomathia
+>
+>  ! ΓΙΑ / ΑΠΟ / ΜΕΧΡΙ / ΜΕ / ΒΗΜΑ / ΤΕΛΟΣ_ΕΠΑΝΑΛΗΨΗΣ
+#^^ source.psg
+#  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ source.psg comment.line.exclamation.glossomathia
+>  ΓΙΑ i ΑΠΟ 1 ΜΕΧΡΙ 3
+#^^ source.psg
+#  ^^^ source.psg keyword.control.loop.glossomathia
+#     ^ source.psg
+#      ^ source.psg variable.other.glossomathia
+#       ^ source.psg
+#        ^^^ source.psg keyword.control.loop.glossomathia
+#           ^ source.psg
+#            ^ source.psg constant.numeric.integer.glossomathia
+#             ^ source.psg
+#              ^^^^^ source.psg keyword.control.loop.glossomathia
+#                   ^ source.psg
+#                    ^ source.psg constant.numeric.integer.glossomathia
+>    ΓΡΑΨΕ i
+#^^^^ source.psg
+#    ^^^^^ source.psg support.function.io.glossomathia
+#         ^ source.psg
+#          ^ source.psg variable.other.glossomathia
+>  ΤΕΛΟΣ_ΕΠΑΝΑΛΗΨΗΣ
+#^^ source.psg
+#  ^^^^^^^^^^^^^^^^ source.psg keyword.control.loop.glossomathia
+>
+>  ΓΙΑ j ΑΠΟ 10 ΜΕΧΡΙ 2 ΜΕ ΒΗΜΑ -2
+#^^ source.psg
+#  ^^^ source.psg keyword.control.loop.glossomathia
+#     ^ source.psg
+#      ^ source.psg variable.other.glossomathia
+#       ^ source.psg
+#        ^^^ source.psg keyword.control.loop.glossomathia
+#           ^ source.psg
+#            ^^ source.psg constant.numeric.integer.glossomathia
+#              ^ source.psg
+#               ^^^^^ source.psg keyword.control.loop.glossomathia
+#                    ^ source.psg
+#                     ^ source.psg constant.numeric.integer.glossomathia
+#                      ^ source.psg
+#                       ^^ source.psg keyword.control.loop.glossomathia
+#                         ^ source.psg
+#                          ^^^^ source.psg keyword.control.loop.glossomathia
+#                              ^ source.psg
+#                               ^ source.psg keyword.operator.arithmetic.glossomathia
+#                                ^ source.psg constant.numeric.integer.glossomathia
+>    ΓΡΑΨΕ j
+#^^^^ source.psg
+#    ^^^^^ source.psg support.function.io.glossomathia
+#         ^ source.psg
+#          ^ source.psg variable.other.glossomathia
+>  ΤΕΛΟΣ_ΕΠΑΝΑΛΗΨΗΣ
+#^^ source.psg
+#  ^^^^^^^^^^^^^^^^ source.psg keyword.control.loop.glossomathia
+>
+>  ! ΟΣΟ / ΕΠΑΝΑΛΑΒΕ / ΤΕΛΟΣ_ΕΠΑΝΑΛΗΨΗΣ
+#^^ source.psg
+#  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ source.psg comment.line.exclamation.glossomathia
+>  πλήθος <- 0
+#^^ source.psg
+#  ^^^^^^ source.psg variable.other.glossomathia
+#        ^ source.psg
+#         ^^ source.psg keyword.operator.assignment.glossomathia
+#           ^ source.psg
+#            ^ source.psg constant.numeric.integer.glossomathia
+>  ΟΣΟ πλήθος < 2 ΕΠΑΝΑΛΑΒΕ
+#^^ source.psg
+#  ^^^ source.psg keyword.control.loop.glossomathia
+#     ^ source.psg
+#      ^^^^^^ source.psg variable.other.glossomathia
+#            ^ source.psg
+#             ^ source.psg keyword.operator.comparison.glossomathia
+#              ^ source.psg
+#               ^ source.psg constant.numeric.integer.glossomathia
+#                ^ source.psg
+#                 ^^^^^^^^^ source.psg keyword.control.loop.glossomathia
+>    ΓΡΑΨΕ 'ΟΣΟ', πλήθος
+#^^^^ source.psg
+#    ^^^^^ source.psg support.function.io.glossomathia
+#         ^ source.psg
+#          ^ source.psg string.quoted.single.glossomathia punctuation.definition.string.begin.glossomathia
+#           ^^^ source.psg string.quoted.single.glossomathia string.quoted.single.glossomathia
+#              ^ source.psg string.quoted.single.glossomathia punctuation.definition.string.end.glossomathia
+#               ^ source.psg punctuation.separator.comma.glossomathia
+#                ^ source.psg
+#                 ^^^^^^ source.psg variable.other.glossomathia
+>    πλήθος <- πλήθος + 1
+#^^^^ source.psg
+#    ^^^^^^ source.psg variable.other.glossomathia
+#          ^ source.psg
+#           ^^ source.psg keyword.operator.assignment.glossomathia
+#             ^ source.psg
+#              ^^^^^^ source.psg variable.other.glossomathia
+#                    ^ source.psg
+#                     ^ source.psg keyword.operator.arithmetic.glossomathia
+#                      ^ source.psg
+#                       ^ source.psg constant.numeric.integer.glossomathia
+>  ΤΕΛΟΣ_ΕΠΑΝΑΛΗΨΗΣ
+#^^ source.psg
+#  ^^^^^^^^^^^^^^^^ source.psg keyword.control.loop.glossomathia
+>
+>  ! ΑΡΧΗ_ΕΠΑΝΑΛΗΨΗΣ / ΜΕΧΡΙΣ_ΟΤΟΥ
+#^^ source.psg
+#  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ source.psg comment.line.exclamation.glossomathia
+>  κ <- 0
+#^^ source.psg
+#  ^ source.psg variable.other.glossomathia
+#   ^ source.psg
+#    ^^ source.psg keyword.operator.assignment.glossomathia
+#      ^ source.psg
+#       ^ source.psg constant.numeric.integer.glossomathia
+>  ΑΡΧΗ_ΕΠΑΝΑΛΗΨΗΣ
+#^^ source.psg
+#  ^^^^^^^^^^^^^^^ source.psg keyword.control.loop.glossomathia
+>    ΓΡΑΨΕ 'ΜΕΧΡΙΣ_ΟΤΟΥ', κ
+#^^^^ source.psg
+#    ^^^^^ source.psg support.function.io.glossomathia
+#         ^ source.psg
+#          ^ source.psg string.quoted.single.glossomathia punctuation.definition.string.begin.glossomathia
+#           ^^^^^^^^^^^ source.psg string.quoted.single.glossomathia string.quoted.single.glossomathia
+#                      ^ source.psg string.quoted.single.glossomathia punctuation.definition.string.end.glossomathia
+#                       ^ source.psg punctuation.separator.comma.glossomathia
+#                        ^ source.psg
+#                         ^ source.psg variable.other.glossomathia
+>    κ <- κ + 1
+#^^^^ source.psg
+#    ^ source.psg variable.other.glossomathia
+#     ^ source.psg
+#      ^^ source.psg keyword.operator.assignment.glossomathia
+#        ^ source.psg
+#         ^ source.psg variable.other.glossomathia
+#          ^ source.psg
+#           ^ source.psg keyword.operator.arithmetic.glossomathia
+#            ^ source.psg
+#             ^ source.psg constant.numeric.integer.glossomathia
+>  ΜΕΧΡΙΣ_ΟΤΟΥ κ > 1
+#^^ source.psg
+#  ^^^^^^^^^^^ source.psg keyword.control.loop.glossomathia
+#             ^ source.psg
+#              ^ source.psg variable.other.glossomathia
+#               ^ source.psg
+#                ^ source.psg keyword.operator.comparison.glossomathia
+#                 ^ source.psg
+#                  ^ source.psg constant.numeric.integer.glossomathia
+>
+>  ! πίνακες
+#^^ source.psg
+#  ^^^^^^^^^ source.psg comment.line.exclamation.glossomathia
+>  πίνακας[1] <- 11
+#^^ source.psg
+#  ^^^^^^^ source.psg variable.other.glossomathia
+#         ^ source.psg punctuation.definition.array.begin.glossomathia
+#          ^ source.psg constant.numeric.integer.glossomathia
+#           ^ source.psg punctuation.definition.array.end.glossomathia
+#            ^ source.psg
+#             ^^ source.psg keyword.operator.assignment.glossomathia
+#               ^ source.psg
+#                ^^ source.psg constant.numeric.integer.glossomathia
+>  πίνακας[2] <- 22
+#^^ source.psg
+#  ^^^^^^^ source.psg variable.other.glossomathia
+#         ^ source.psg punctuation.definition.array.begin.glossomathia
+#          ^ source.psg constant.numeric.integer.glossomathia
+#           ^ source.psg punctuation.definition.array.end.glossomathia
+#            ^ source.psg
+#             ^^ source.psg keyword.operator.assignment.glossomathia
+#               ^ source.psg
+#                ^^ source.psg constant.numeric.integer.glossomathia
+>  πίνακας2[1,1] <- 100
+#^^ source.psg
+#  ^^^^^^^^ source.psg variable.other.glossomathia
+#          ^ source.psg punctuation.definition.array.begin.glossomathia
+#           ^ source.psg constant.numeric.integer.glossomathia
+#            ^ source.psg punctuation.separator.comma.glossomathia
+#             ^ source.psg constant.numeric.integer.glossomathia
+#              ^ source.psg punctuation.definition.array.end.glossomathia
+#               ^ source.psg
+#                ^^ source.psg keyword.operator.assignment.glossomathia
+#                  ^ source.psg
+#                   ^^^ source.psg constant.numeric.integer.glossomathia
+>  πίνακας2[2,3] <- 200
+#^^ source.psg
+#  ^^^^^^^^ source.psg variable.other.glossomathia
+#          ^ source.psg punctuation.definition.array.begin.glossomathia
+#           ^ source.psg constant.numeric.integer.glossomathia
+#            ^ source.psg punctuation.separator.comma.glossomathia
+#             ^ source.psg constant.numeric.integer.glossomathia
+#              ^ source.psg punctuation.definition.array.end.glossomathia
+#               ^ source.psg
+#                ^^ source.psg keyword.operator.assignment.glossomathia
+#                  ^ source.psg
+#                   ^^^ source.psg constant.numeric.integer.glossomathia
+>  ΓΡΑΨΕ πίνακας[1], πίνακας[2], πίνακας2[1,1], πίνακας2[2,3]
+#^^ source.psg
+#  ^^^^^ source.psg support.function.io.glossomathia
+#       ^ source.psg
+#        ^^^^^^^ source.psg variable.other.glossomathia
+#               ^ source.psg punctuation.definition.array.begin.glossomathia
+#                ^ source.psg constant.numeric.integer.glossomathia
+#                 ^ source.psg punctuation.definition.array.end.glossomathia
+#                  ^ source.psg punctuation.separator.comma.glossomathia
+#                   ^ source.psg
+#                    ^^^^^^^ source.psg variable.other.glossomathia
+#                           ^ source.psg punctuation.definition.array.begin.glossomathia
+#                            ^ source.psg constant.numeric.integer.glossomathia
+#                             ^ source.psg punctuation.definition.array.end.glossomathia
+#                              ^ source.psg punctuation.separator.comma.glossomathia
+#                               ^ source.psg
+#                                ^^^^^^^^ source.psg variable.other.glossomathia
+#                                        ^ source.psg punctuation.definition.array.begin.glossomathia
+#                                         ^ source.psg constant.numeric.integer.glossomathia
+#                                          ^ source.psg punctuation.separator.comma.glossomathia
+#                                           ^ source.psg constant.numeric.integer.glossomathia
+#                                            ^ source.psg punctuation.definition.array.end.glossomathia
+#                                             ^ source.psg punctuation.separator.comma.glossomathia
+#                                              ^ source.psg
+#                                               ^^^^^^^^ source.psg variable.other.glossomathia
+#                                                       ^ source.psg punctuation.definition.array.begin.glossomathia
+#                                                        ^ source.psg constant.numeric.integer.glossomathia
+#                                                         ^ source.psg punctuation.separator.comma.glossomathia
+#                                                          ^ source.psg constant.numeric.integer.glossomathia
+#                                                           ^ source.psg punctuation.definition.array.end.glossomathia
+>
+>  ! λογικοί τελεστές για highlighting
+#^^ source.psg
+#  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ source.psg comment.line.exclamation.glossomathia
+>  ΑΝ (α > 0) ΚΑΙ (β > 0) ΤΟΤΕ
+#^^ source.psg
+#  ^^ source.psg keyword.control.conditional.glossomathia
+#    ^ source.psg
+#     ^ source.psg punctuation.section.group.begin.glossomathia
+#      ^ source.psg variable.other.glossomathia
+#       ^ source.psg
+#        ^ source.psg keyword.operator.comparison.glossomathia
+#         ^ source.psg
+#          ^ source.psg constant.numeric.integer.glossomathia
+#           ^ source.psg punctuation.section.group.end.glossomathia
+#            ^ source.psg
+#             ^^^ source.psg keyword.operator.word.glossomathia
+#                ^ source.psg
+#                 ^ source.psg punctuation.section.group.begin.glossomathia
+#                  ^ source.psg variable.other.glossomathia
+#                   ^ source.psg
+#                    ^ source.psg keyword.operator.comparison.glossomathia
+#                     ^ source.psg
+#                      ^ source.psg constant.numeric.integer.glossomathia
+#                       ^ source.psg punctuation.section.group.end.glossomathia
+#                        ^ source.psg
+#                         ^^^^ source.psg keyword.control.conditional.glossomathia
+>    ΓΡΑΨΕ 'ΚΑΙ'
+#^^^^ source.psg
+#    ^^^^^ source.psg support.function.io.glossomathia
+#         ^ source.psg
+#          ^ source.psg string.quoted.single.glossomathia punctuation.definition.string.begin.glossomathia
+#           ^^^ source.psg string.quoted.single.glossomathia string.quoted.single.glossomathia
+#              ^ source.psg string.quoted.single.glossomathia punctuation.definition.string.end.glossomathia
+>  ΤΕΛΟΣ_ΑΝ
+#^^ source.psg
+#  ^^^^^^^^ source.psg keyword.control.conditional.glossomathia
+>
+>  ΑΝ (α < 0) Η (β < 0) ΤΟΤΕ
+#^^ source.psg
+#  ^^ source.psg keyword.control.conditional.glossomathia
+#    ^ source.psg
+#     ^ source.psg punctuation.section.group.begin.glossomathia
+#      ^ source.psg variable.other.glossomathia
+#       ^ source.psg
+#        ^ source.psg keyword.operator.comparison.glossomathia
+#         ^ source.psg
+#          ^ source.psg constant.numeric.integer.glossomathia
+#           ^ source.psg punctuation.section.group.end.glossomathia
+#            ^ source.psg
+#             ^ source.psg keyword.operator.word.glossomathia
+#              ^ source.psg
+#               ^ source.psg punctuation.section.group.begin.glossomathia
+#                ^ source.psg variable.other.glossomathia
+#                 ^ source.psg
+#                  ^ source.psg keyword.operator.comparison.glossomathia
+#                   ^ source.psg
+#                    ^ source.psg constant.numeric.integer.glossomathia
+#                     ^ source.psg punctuation.section.group.end.glossomathia
+#                      ^ source.psg
+#                       ^^^^ source.psg keyword.control.conditional.glossomathia
+>    ΓΡΑΨΕ 'Η'
+#^^^^ source.psg
+#    ^^^^^ source.psg support.function.io.glossomathia
+#         ^ source.psg
+#          ^ source.psg string.quoted.single.glossomathia punctuation.definition.string.begin.glossomathia
+#           ^ source.psg string.quoted.single.glossomathia string.quoted.single.glossomathia
+#            ^ source.psg string.quoted.single.glossomathia punctuation.definition.string.end.glossomathia
+>  ΑΛΛΙΩΣ
+#^^ source.psg
+#  ^^^^^^ source.psg keyword.control.conditional.glossomathia
+>    ΓΡΑΨΕ 'όχι αρνητικοί'
+#^^^^ source.psg
+#    ^^^^^ source.psg support.function.io.glossomathia
+#         ^ source.psg
+#          ^ source.psg string.quoted.single.glossomathia punctuation.definition.string.begin.glossomathia
+#           ^^^^^^^^^^^^^ source.psg string.quoted.single.glossomathia string.quoted.single.glossomathia
+#                        ^ source.psg string.quoted.single.glossomathia punctuation.definition.string.end.glossomathia
+>  ΤΕΛΟΣ_ΑΝ
+#^^ source.psg
+#  ^^^^^^^^ source.psg keyword.control.conditional.glossomathia
+>
+>  ΑΝ ΟΧΙ (α = 0) ΤΟΤΕ
+#^^ source.psg
+#  ^^ source.psg keyword.control.conditional.glossomathia
+#    ^ source.psg
+#     ^^^ source.psg keyword.operator.word.glossomathia
+#        ^ source.psg
+#         ^ source.psg punctuation.section.group.begin.glossomathia
+#          ^ source.psg variable.other.glossomathia
+#           ^ source.psg
+#            ^ source.psg keyword.operator.comparison.glossomathia
+#             ^ source.psg
+#              ^ source.psg constant.numeric.integer.glossomathia
+#               ^ source.psg punctuation.section.group.end.glossomathia
+#                ^ source.psg
+#                 ^^^^ source.psg keyword.control.conditional.glossomathia
+>    ΓΡΑΨΕ 'ΟΧΙ'
+#^^^^ source.psg
+#    ^^^^^ source.psg support.function.io.glossomathia
+#         ^ source.psg
+#          ^ source.psg string.quoted.single.glossomathia punctuation.definition.string.begin.glossomathia
+#           ^^^ source.psg string.quoted.single.glossomathia string.quoted.single.glossomathia
+#              ^ source.psg string.quoted.single.glossomathia punctuation.definition.string.end.glossomathia
+>  ΤΕΛΟΣ_ΑΝ
+#^^ source.psg
+#  ^^^^^^^^ source.psg keyword.control.conditional.glossomathia
+>
+>  ! διαδικασία
+#^^ source.psg
+#  ^^^^^^^^^^^^ source.psg comment.line.exclamation.glossomathia
+>  ΚΑΛΕΣΕ Διπλασίασε(α)
+#^^ source.psg
+#  ^^^^^^ source.psg keyword.other.subprogram.glossomathia
+#        ^ source.psg
+#         ^^^^^^^^^^ source.psg entity.name.function.call.glossomathia
+#                   ^ source.psg punctuation.section.group.begin.glossomathia
+#                    ^ source.psg variable.other.glossomathia
+#                     ^ source.psg punctuation.section.group.end.glossomathia
+>  ΚΑΛΕΣΕ HM(α)
+#^^ source.psg
+#  ^^^^^^ source.psg keyword.other.subprogram.glossomathia
+#        ^ source.psg
+#         ^^ source.psg entity.name.function.call.glossomathia
+#           ^ source.psg punctuation.section.group.begin.glossomathia
+#            ^ source.psg variable.other.glossomathia
+#             ^ source.psg punctuation.section.group.end.glossomathia
+>  ΓΡΑΨΕ 'μετά τη διαδικασία', α
+#^^ source.psg
+#  ^^^^^ source.psg support.function.io.glossomathia
+#       ^ source.psg
+#        ^ source.psg string.quoted.single.glossomathia punctuation.definition.string.begin.glossomathia
+#         ^^^^^^^^^^^^^^^^^^ source.psg string.quoted.single.glossomathia string.quoted.single.glossomathia
+#                           ^ source.psg string.quoted.single.glossomathia punctuation.definition.string.end.glossomathia
+#                            ^ source.psg punctuation.separator.comma.glossomathia
+#                             ^ source.psg
+#                              ^ source.psg variable.other.glossomathia
+>
+>  ! συνάρτηση
+#^^ source.psg
+#  ^^^^^^^^^^^ source.psg comment.line.exclamation.glossomathia
+>  γ <- Τετράγωνο(β)
+#^^ source.psg
+#  ^ source.psg variable.other.glossomathia
+#   ^ source.psg
+#    ^^ source.psg keyword.operator.assignment.glossomathia
+#      ^ source.psg
+#       ^^^^^^^^^ source.psg entity.name.function.call.glossomathia
+#                ^ source.psg punctuation.section.group.begin.glossomathia
+#                 ^ source.psg variable.other.glossomathia
+#                  ^ source.psg punctuation.section.group.end.glossomathia
+>  ΓΡΑΨΕ 'τετράγωνο', γ
+#^^ source.psg
+#  ^^^^^ source.psg support.function.io.glossomathia
+#       ^ source.psg
+#        ^ source.psg string.quoted.single.glossomathia punctuation.definition.string.begin.glossomathia
+#         ^^^^^^^^^ source.psg string.quoted.single.glossomathia string.quoted.single.glossomathia
+#                  ^ source.psg string.quoted.single.glossomathia punctuation.definition.string.end.glossomathia
+#                   ^ source.psg punctuation.separator.comma.glossomathia
+#                    ^ source.psg
+#                     ^ source.psg variable.other.glossomathia
+>
+>  ! εναλλακτικά σύμβολα εκχώρησης
+#^^ source.psg
+#  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ source.psg comment.line.exclamation.glossomathia
+>  α <-- 6
+#^^ source.psg
+#  ^ source.psg variable.other.glossomathia
+#   ^ source.psg
+#    ^^^ source.psg keyword.operator.assignment.glossomathia
+#       ^ source.psg
+#        ^ source.psg constant.numeric.integer.glossomathia
+>  β ← 7
+#^^ source.psg
+#  ^ source.psg variable.other.glossomathia
+#   ^ source.psg
+#    ^ source.psg keyword.operator.assignment.glossomathia
+#     ^ source.psg
+#      ^ source.psg constant.numeric.integer.glossomathia
+>
+>  ! συγκριτικοί τελεστές
+#^^ source.psg
+#  ^^^^^^^^^^^^^^^^^^^^^^ source.psg comment.line.exclamation.glossomathia
+>  ΑΝ α >= β ΤΟΤΕ
+#^^ source.psg
+#  ^^ source.psg keyword.control.conditional.glossomathia
+#    ^ source.psg
+#     ^ source.psg variable.other.glossomathia
+#      ^ source.psg
+#       ^^ source.psg keyword.operator.comparison.glossomathia
+#         ^ source.psg
+#          ^ source.psg variable.other.glossomathia
+#           ^ source.psg
+#            ^^^^ source.psg keyword.control.conditional.glossomathia
+>    ΓΡΑΨΕ 'α >= β'
+#^^^^ source.psg
+#    ^^^^^ source.psg support.function.io.glossomathia
+#         ^ source.psg
+#          ^ source.psg string.quoted.single.glossomathia punctuation.definition.string.begin.glossomathia
+#           ^^^^^^ source.psg string.quoted.single.glossomathia string.quoted.single.glossomathia
+#                 ^ source.psg string.quoted.single.glossomathia punctuation.definition.string.end.glossomathia
+>  ΑΛΛΙΩΣ_ΑΝ α <= β ΤΟΤΕ
+#^^ source.psg
+#  ^^^^^^^^^ source.psg keyword.control.conditional.glossomathia
+#           ^ source.psg
+#            ^ source.psg variable.other.glossomathia
+#             ^ source.psg
+#              ^^ source.psg keyword.operator.comparison.glossomathia
+#                ^ source.psg
+#                 ^ source.psg variable.other.glossomathia
+#                  ^ source.psg
+#                   ^^^^ source.psg keyword.control.conditional.glossomathia
+>    ΓΡΑΨΕ 'α <= β'
+#^^^^ source.psg
+#    ^^^^^ source.psg support.function.io.glossomathia
+#         ^ source.psg
+#          ^ source.psg string.quoted.single.glossomathia punctuation.definition.string.begin.glossomathia
+#           ^^^^^^ source.psg string.quoted.single.glossomathia string.quoted.single.glossomathia
+#                 ^ source.psg string.quoted.single.glossomathia punctuation.definition.string.end.glossomathia
+>  ΑΛΛΙΩΣ_ΑΝ α <> β ΤΟΤΕ
+#^^ source.psg
+#  ^^^^^^^^^ source.psg keyword.control.conditional.glossomathia
+#           ^ source.psg
+#            ^ source.psg variable.other.glossomathia
+#             ^ source.psg
+#              ^^ source.psg keyword.operator.comparison.glossomathia
+#                ^ source.psg
+#                 ^ source.psg variable.other.glossomathia
+#                  ^ source.psg
+#                   ^^^^ source.psg keyword.control.conditional.glossomathia
+>    ΓΡΑΨΕ 'α <> β'
+#^^^^ source.psg
+#    ^^^^^ source.psg support.function.io.glossomathia
+#         ^ source.psg
+#          ^ source.psg string.quoted.single.glossomathia punctuation.definition.string.begin.glossomathia
+#           ^^^^^^ source.psg string.quoted.single.glossomathia string.quoted.single.glossomathia
+#                 ^ source.psg string.quoted.single.glossomathia punctuation.definition.string.end.glossomathia
+>  ΤΕΛΟΣ_ΑΝ
+#^^ source.psg
+#  ^^^^^^^^ source.psg keyword.control.conditional.glossomathia
+>
+>  ! λογικός τελεστής με τόνο
+#^^ source.psg
+#  ^^^^^^^^^^^^^^^^^^^^^^^^^^ source.psg comment.line.exclamation.glossomathia
+>  ΑΝ (α > 0) Ή (β > 0) ΤΟΤΕ
+#^^ source.psg
+#  ^^ source.psg keyword.control.conditional.glossomathia
+#    ^ source.psg
+#     ^ source.psg punctuation.section.group.begin.glossomathia
+#      ^ source.psg variable.other.glossomathia
+#       ^ source.psg
+#        ^ source.psg keyword.operator.comparison.glossomathia
+#         ^ source.psg
+#          ^ source.psg constant.numeric.integer.glossomathia
+#           ^ source.psg punctuation.section.group.end.glossomathia
+#            ^ source.psg
+#             ^ source.psg keyword.operator.word.glossomathia
+#              ^ source.psg
+#               ^ source.psg punctuation.section.group.begin.glossomathia
+#                ^ source.psg variable.other.glossomathia
+#                 ^ source.psg
+#                  ^ source.psg keyword.operator.comparison.glossomathia
+#                   ^ source.psg
+#                    ^ source.psg constant.numeric.integer.glossomathia
+#                     ^ source.psg punctuation.section.group.end.glossomathia
+#                      ^ source.psg
+#                       ^^^^ source.psg keyword.control.conditional.glossomathia
+>    ΓΡΑΨΕ 'Ή'
+#^^^^ source.psg
+#    ^^^^^ source.psg support.function.io.glossomathia
+#         ^ source.psg
+#          ^ source.psg string.quoted.single.glossomathia punctuation.definition.string.begin.glossomathia
+#           ^ source.psg string.quoted.single.glossomathia string.quoted.single.glossomathia
+#            ^ source.psg string.quoted.single.glossomathia punctuation.definition.string.end.glossomathia
+>  ΤΕΛΟΣ_ΑΝ
+#^^ source.psg
+#  ^^^^^^^^ source.psg keyword.control.conditional.glossomathia
+>
+>  ! δύναμη και ενσωματωμένες μαθηματικές συναρτήσεις
+#^^ source.psg
+#  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ source.psg comment.line.exclamation.glossomathia
+>  z <- α^2
+#^^ source.psg
+#  ^ source.psg variable.other.glossomathia
+#   ^ source.psg
+#    ^^ source.psg keyword.operator.assignment.glossomathia
+#      ^ source.psg
+#       ^ source.psg variable.other.glossomathia
+#        ^ source.psg keyword.operator.arithmetic.glossomathia
+#         ^ source.psg constant.numeric.integer.glossomathia
+>  z <- ΗΜ(x) + ΣΥΝ(x) + ΕΦ(x)
+#^^ source.psg
+#  ^ source.psg variable.other.glossomathia
+#   ^ source.psg
+#    ^^ source.psg keyword.operator.assignment.glossomathia
+#      ^ source.psg
+#       ^^ source.psg support.function.builtin.glossomathia
+#         ^ source.psg punctuation.section.group.begin.glossomathia
+#          ^ source.psg variable.other.glossomathia
+#           ^ source.psg punctuation.section.group.end.glossomathia
+#            ^ source.psg
+#             ^ source.psg keyword.operator.arithmetic.glossomathia
+#              ^ source.psg
+#               ^^^ source.psg support.function.builtin.glossomathia
+#                  ^ source.psg punctuation.section.group.begin.glossomathia
+#                   ^ source.psg variable.other.glossomathia
+#                    ^ source.psg punctuation.section.group.end.glossomathia
+#                     ^ source.psg
+#                      ^ source.psg keyword.operator.arithmetic.glossomathia
+#                       ^ source.psg
+#                        ^^ source.psg support.function.builtin.glossomathia
+#                          ^ source.psg punctuation.section.group.begin.glossomathia
+#                           ^ source.psg variable.other.glossomathia
+#                            ^ source.psg punctuation.section.group.end.glossomathia
+>  z <- Τ_Ρ(x) + Α_Μ(x) + Α_Τ(-x)
+#^^ source.psg
+#  ^ source.psg variable.other.glossomathia
+#   ^ source.psg
+#    ^^ source.psg keyword.operator.assignment.glossomathia
+#      ^ source.psg
+#       ^^^ source.psg support.function.builtin.glossomathia
+#          ^ source.psg punctuation.section.group.begin.glossomathia
+#           ^ source.psg variable.other.glossomathia
+#            ^ source.psg punctuation.section.group.end.glossomathia
+#             ^ source.psg
+#              ^ source.psg keyword.operator.arithmetic.glossomathia
+#               ^ source.psg
+#                ^^^ source.psg support.function.builtin.glossomathia
+#                   ^ source.psg punctuation.section.group.begin.glossomathia
+#                    ^ source.psg variable.other.glossomathia
+#                     ^ source.psg punctuation.section.group.end.glossomathia
+#                      ^ source.psg
+#                       ^ source.psg keyword.operator.arithmetic.glossomathia
+#                        ^ source.psg
+#                         ^^^ source.psg support.function.builtin.glossomathia
+#                            ^ source.psg punctuation.section.group.begin.glossomathia
+#                             ^ source.psg keyword.operator.arithmetic.glossomathia
+#                              ^ source.psg variable.other.glossomathia
+#                               ^ source.psg punctuation.section.group.end.glossomathia
+>  z <- ΛΟΓ(x) + Ε(x)
+#^^ source.psg
+#  ^ source.psg variable.other.glossomathia
+#   ^ source.psg
+#    ^^ source.psg keyword.operator.assignment.glossomathia
+#      ^ source.psg
+#       ^^^ source.psg support.function.builtin.glossomathia
+#          ^ source.psg punctuation.section.group.begin.glossomathia
+#           ^ source.psg variable.other.glossomathia
+#            ^ source.psg punctuation.section.group.end.glossomathia
+#             ^ source.psg
+#              ^ source.psg keyword.operator.arithmetic.glossomathia
+#               ^ source.psg
+#                ^ source.psg support.function.builtin.glossomathia
+#                 ^ source.psg punctuation.section.group.begin.glossomathia
+#                  ^ source.psg variable.other.glossomathia
+#                   ^ source.psg punctuation.section.group.end.glossomathia
+>  ΓΡΑΨΕ z:8:2
+#^^ source.psg
+#  ^^^^^ source.psg support.function.io.glossomathia
+#       ^ source.psg
+#        ^ source.psg variable.other.glossomathia
+#         ^ source.psg punctuation.separator.colon.glossomathia
+#          ^ source.psg constant.numeric.integer.glossomathia
+#           ^ source.psg punctuation.separator.colon.glossomathia
+#            ^ source.psg constant.numeric.integer.glossomathia
+>
+>  ! περιοχή τιμών στην ΕΠΙΛΕΞΕ
+#^^ source.psg
+#  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^ source.psg comment.line.exclamation.glossomathia
+>  ΕΠΙΛΕΞΕ α
+#^^ source.psg
+#  ^^^^^^^ source.psg keyword.control.switch.glossomathia
+#         ^ source.psg
+#          ^ source.psg variable.other.glossomathia
+>    ΠΕΡΙΠΤΩΣΗ 1..9
+#^^^^ source.psg
+#    ^^^^^^^^^ source.psg keyword.control.switch.glossomathia
+#             ^ source.psg
+#              ^ source.psg constant.numeric.integer.glossomathia
+#               ^^ source.psg keyword.operator.range.glossomathia
+#                 ^ source.psg constant.numeric.integer.glossomathia
+>      ΓΡΑΨΕ 'μονοψήφιος'
+#^^^^^^ source.psg
+#      ^^^^^ source.psg support.function.io.glossomathia
+#           ^ source.psg
+#            ^ source.psg string.quoted.single.glossomathia punctuation.definition.string.begin.glossomathia
+#             ^^^^^^^^^^ source.psg string.quoted.single.glossomathia string.quoted.single.glossomathia
+#                       ^ source.psg string.quoted.single.glossomathia punctuation.definition.string.end.glossomathia
+>    ΠΕΡΙΠΤΩΣΗ 10..99, 50000
+#^^^^ source.psg
+#    ^^^^^^^^^ source.psg keyword.control.switch.glossomathia
+#             ^ source.psg
+#              ^^ source.psg constant.numeric.integer.glossomathia
+#                ^^ source.psg keyword.operator.range.glossomathia
+#                  ^^ source.psg constant.numeric.integer.glossomathia
+#                    ^ source.psg punctuation.separator.comma.glossomathia
+#                     ^ source.psg
+#                      ^^^^^ source.psg constant.numeric.integer.glossomathia
+>      ΓΡΑΨΕ 'διψήφιος ή 50000'
+#^^^^^^ source.psg
+#      ^^^^^ source.psg support.function.io.glossomathia
+#           ^ source.psg
+#            ^ source.psg string.quoted.single.glossomathia punctuation.definition.string.begin.glossomathia
+#             ^^^^^^^^^^^^^^^^ source.psg string.quoted.single.glossomathia string.quoted.single.glossomathia
+#                             ^ source.psg string.quoted.single.glossomathia punctuation.definition.string.end.glossomathia
+>  ΤΕΛΟΣ_ΕΠΙΛΟΓΩΝ
+#^^ source.psg
+#  ^^^^^^^^^^^^^^ source.psg keyword.control.switch.glossomathia
+>
+>  ! εμπλουτισμένο συντακτικό: αρχεία
+#^^ source.psg
+#  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ source.psg comment.line.exclamation.glossomathia
+>  ΣΥΣΧΕΤΙΣΕ_ΑΡΧΕΙΟ αρχείο_κειμένου, 'DATA.TXT'
+#^^ source.psg
+#  ^^^^^^^^^^^^^^^^ source.psg variable.other.glossomathia
+#                  ^ source.psg
+#                   ^^^^^^^^^^^^^^^ source.psg variable.other.glossomathia
+#                                  ^ source.psg punctuation.separator.comma.glossomathia
+#                                   ^ source.psg
+#                                    ^ source.psg string.quoted.single.glossomathia punctuation.definition.string.begin.glossomathia
+#                                     ^^^^^^^^ source.psg string.quoted.single.glossomathia string.quoted.single.glossomathia
+#                                             ^ source.psg string.quoted.single.glossomathia punctuation.definition.string.end.glossomathia
+>  ΔΗΜΙΟΥΡΓΗΣΕ_ΑΡΧΕΙΟ αρχείο_κειμένου
+#^^ source.psg
+#  ^^^^^^^^^^^^^^^^^^ source.psg variable.other.glossomathia
+#                    ^ source.psg
+#                     ^^^^^^^^^^^^^^^ source.psg variable.other.glossomathia
+>  ΑΝΟΙΞΕ_ΑΡΧΕΙΟ αρχείο_κειμένου
+#^^ source.psg
+#  ^^^^^^^^^^^^^ source.psg variable.other.glossomathia
+#               ^ source.psg
+#                ^^^^^^^^^^^^^^^ source.psg variable.other.glossomathia
+>  ΔΙΑΤΡΕΞΕ_ΑΡΧΕΙΟ αρχείο_κειμένου, ΜΕΓΕΘΟΣ_ΑΡΧΕΙΟΥ(αρχείο_κειμένου)+1
+#^^ source.psg
+#  ^^^^^^^^^^^^^^^ source.psg variable.other.glossomathia
+#                 ^ source.psg
+#                  ^^^^^^^^^^^^^^^ source.psg variable.other.glossomathia
+#                                 ^ source.psg punctuation.separator.comma.glossomathia
+#                                  ^ source.psg
+#                                   ^^^^^^^^^^^^^^^ source.psg entity.name.function.call.glossomathia
+#                                                  ^ source.psg punctuation.section.group.begin.glossomathia
+#                                                   ^^^^^^^^^^^^^^^ source.psg variable.other.glossomathia
+#                                                                  ^ source.psg punctuation.section.group.end.glossomathia
+#                                                                   ^ source.psg keyword.operator.arithmetic.glossomathia
+#                                                                    ^ source.psg constant.numeric.integer.glossomathia
+>  ΓΡΑΨΕ_ΑΡΧΕΙΟ αρχείο_κειμένου, κείμενο
+#^^ source.psg
+#  ^^^^^^^^^^^^ source.psg variable.other.glossomathia
+#              ^ source.psg
+#               ^^^^^^^^^^^^^^^ source.psg variable.other.glossomathia
+#                              ^ source.psg punctuation.separator.comma.glossomathia
+#                               ^ source.psg
+#                                ^^^^^^^ source.psg variable.other.glossomathia
+>  ΔΙΑΒΑΣΕ_ΑΡΧΕΙΟ αρχείο_κειμένου, κείμενο
+#^^ source.psg
+#  ^^^^^^^^^^^^^^ source.psg variable.other.glossomathia
+#                ^ source.psg
+#                 ^^^^^^^^^^^^^^^ source.psg variable.other.glossomathia
+#                                ^ source.psg punctuation.separator.comma.glossomathia
+#                                 ^ source.psg
+#                                  ^^^^^^^ source.psg variable.other.glossomathia
+>  ΑΠΟΚΟΨΕ_ΑΡΧΕΙΟ αρχείο_κειμένου
+#^^ source.psg
+#  ^^^^^^^^^^^^^^ source.psg variable.other.glossomathia
+#                ^ source.psg
+#                 ^^^^^^^^^^^^^^^ source.psg variable.other.glossomathia
+>  ΓΡΑΨΕ ΘΕΣΗ_ΑΡΧΕΙΟΥ(αρχείο_κειμένου), ΜΕΓΕΘΟΣ_ΑΡΧΕΙΟΥ(αρχείο_κειμένου)
+#^^ source.psg
+#  ^^^^^ source.psg support.function.io.glossomathia
+#       ^ source.psg
+#        ^^^^^^^^^^^^ source.psg entity.name.function.call.glossomathia
+#                    ^ source.psg punctuation.section.group.begin.glossomathia
+#                     ^^^^^^^^^^^^^^^ source.psg variable.other.glossomathia
+#                                    ^ source.psg punctuation.section.group.end.glossomathia
+#                                     ^ source.psg punctuation.separator.comma.glossomathia
+#                                      ^ source.psg
+#                                       ^^^^^^^^^^^^^^^ source.psg entity.name.function.call.glossomathia
+#                                                      ^ source.psg punctuation.section.group.begin.glossomathia
+#                                                       ^^^^^^^^^^^^^^^ source.psg variable.other.glossomathia
+#                                                                      ^ source.psg punctuation.section.group.end.glossomathia
+>  ΓΡΑΨΕ ΥΠΑΡΧΕΙ_ΑΡΧΕΙΟ('DATA.TXT'), ΤΕΛΟΣ_ΑΡΧΕΙΟΥ(αρχείο_κειμένου)
+#^^ source.psg
+#  ^^^^^ source.psg support.function.io.glossomathia
+#       ^ source.psg
+#        ^^^^^^^^^^^^^^ source.psg entity.name.function.call.glossomathia
+#                      ^ source.psg punctuation.section.group.begin.glossomathia
+#                       ^ source.psg string.quoted.single.glossomathia punctuation.definition.string.begin.glossomathia
+#                        ^^^^^^^^ source.psg string.quoted.single.glossomathia string.quoted.single.glossomathia
+#                                ^ source.psg string.quoted.single.glossomathia punctuation.definition.string.end.glossomathia
+#                                 ^ source.psg punctuation.section.group.end.glossomathia
+#                                  ^ source.psg punctuation.separator.comma.glossomathia
+#                                   ^ source.psg
+#                                    ^^^^^^^^^^^^^ source.psg entity.name.function.call.glossomathia
+#                                                 ^ source.psg punctuation.section.group.begin.glossomathia
+#                                                  ^^^^^^^^^^^^^^^ source.psg variable.other.glossomathia
+#                                                                 ^ source.psg punctuation.section.group.end.glossomathia
+>  ΚΛΕΙΣΕ_ΑΡΧΕΙΟ αρχείο_κειμένου
+#^^ source.psg
+#  ^^^^^^^^^^^^^ source.psg variable.other.glossomathia
+#               ^ source.psg
+#                ^^^^^^^^^^^^^^^ source.psg variable.other.glossomathia
+>  ΜΕΤΟΝΟΜΑΣΕ_ΑΡΧΕΙΟ αρχείο_κειμένου, 'DATA2.TXT'
+#^^ source.psg
+#  ^^^^^^^^^^^^^^^^^ source.psg variable.other.glossomathia
+#                   ^ source.psg
+#                    ^^^^^^^^^^^^^^^ source.psg variable.other.glossomathia
+#                                   ^ source.psg punctuation.separator.comma.glossomathia
+#                                    ^ source.psg
+#                                     ^ source.psg string.quoted.single.glossomathia punctuation.definition.string.begin.glossomathia
+#                                      ^^^^^^^^^ source.psg string.quoted.single.glossomathia string.quoted.single.glossomathia
+#                                               ^ source.psg string.quoted.single.glossomathia punctuation.definition.string.end.glossomathia
+>  ΔΙΑΓΡΑΨΕ_ΑΡΧΕΙΟ αρχείο_κειμένου
+#^^ source.psg
+#  ^^^^^^^^^^^^^^^ source.psg variable.other.glossomathia
+#                 ^ source.psg
+#                  ^^^^^^^^^^^^^^^ source.psg variable.other.glossomathia
+>
+>  ! εμπλουτισμένο συντακτικό: οθόνη και εκτέλεση
+#^^ source.psg
+#  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ source.psg comment.line.exclamation.glossomathia
+>  ΣΕΙΡΙΑΚΗ_ΕΚΤΕΛΕΣΗ
+#^^ source.psg
+#  ^^^^^^^^^^^^^^^^^ source.psg keyword.control.execution.glossomathia
+>  ΠΑΡΑΛΛΗΛΗ_ΕΚΤΕΛΕΣΗ
+#^^ source.psg
+#  ^^^^^^^^^^^^^^^^^^ source.psg keyword.control.execution.glossomathia
+>  ΕΚΤΕΛΕΣΕ 'NOTEPAD.EXE'
+#^^ source.psg
+#  ^^^^^^^^ source.psg keyword.control.execution.glossomathia
+#          ^ source.psg
+#           ^ source.psg string.quoted.single.glossomathia punctuation.definition.string.begin.glossomathia
+#            ^^^^^^^^^^^ source.psg string.quoted.single.glossomathia string.quoted.single.glossomathia
+#                       ^ source.psg string.quoted.single.glossomathia punctuation.definition.string.end.glossomathia
+>  ΚΑΘΑΡΙΣΕ_ΟΘΟΝΗ
+#^^ source.psg
+#  ^^^^^^^^^^^^^^ source.psg support.function.screen.glossomathia
+>  ΠΗΓΑΙΝΕ_ΧΥ 10, 5
+#^^ source.psg
+#  ^^^^^^^^^^ source.psg support.function.screen.glossomathia
+#            ^ source.psg
+#             ^^ source.psg constant.numeric.integer.glossomathia
+#               ^ source.psg punctuation.separator.comma.glossomathia
+#                ^ source.psg
+#                 ^ source.psg constant.numeric.integer.glossomathia
+>  ΓΡΑΨΕ ΘΕΣΗ_Χ, ΘΕΣΗ_Υ
+#^^ source.psg
+#  ^^^^^ source.psg support.function.io.glossomathia
+#       ^ source.psg
+#        ^^^^^^ source.psg support.variable.screen.glossomathia
+#              ^ source.psg punctuation.separator.comma.glossomathia
+#               ^ source.psg
+#                ^^^^^^ source.psg support.variable.screen.glossomathia
+>
+>  ! εμπλουτισμένο συντακτικό: πρόσθετες συναρτήσεις
+#^^ source.psg
+#  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ source.psg comment.line.exclamation.glossomathia
+>  ΓΡΑΨΕ ΤΥΧΑΙΟΣ(100), ΣΤΡΟΓΓ(4.96), Κ_Μ(2.75)
+#^^ source.psg
+#  ^^^^^ source.psg support.function.io.glossomathia
+#       ^ source.psg
+#        ^^^^^^^ source.psg support.function.builtin.glossomathia
+#               ^ source.psg punctuation.section.group.begin.glossomathia
+#                ^^^ source.psg constant.numeric.integer.glossomathia
+#                   ^ source.psg punctuation.section.group.end.glossomathia
+#                    ^ source.psg punctuation.separator.comma.glossomathia
+#                     ^ source.psg
+#                      ^^^^^^ source.psg support.function.builtin.glossomathia
+#                            ^ source.psg punctuation.section.group.begin.glossomathia
+#                             ^^^^ source.psg constant.numeric.float.glossomathia
+#                                 ^ source.psg punctuation.section.group.end.glossomathia
+#                                  ^ source.psg punctuation.separator.comma.glossomathia
+#                                   ^ source.psg
+#                                    ^^^ source.psg support.function.builtin.glossomathia
+#                                       ^ source.psg punctuation.section.group.begin.glossomathia
+#                                        ^^^^ source.psg constant.numeric.float.glossomathia
+#                                            ^ source.psg punctuation.section.group.end.glossomathia
+>  ΓΡΑΨΕ ΜΗΚΟΣ_ΧΑΡ(κείμενο), ΧΑΡ(65), ΣΕΙΡΑ_ΧΑΡ('Α')
+#^^ source.psg
+#  ^^^^^ source.psg support.function.io.glossomathia
+#       ^ source.psg
+#        ^^^^^^^^^ source.psg support.function.builtin.glossomathia
+#                 ^ source.psg punctuation.section.group.begin.glossomathia
+#                  ^^^^^^^ source.psg variable.other.glossomathia
+#                         ^ source.psg punctuation.section.group.end.glossomathia
+#                          ^ source.psg punctuation.separator.comma.glossomathia
+#                           ^ source.psg
+#                            ^^^ source.psg support.function.builtin.glossomathia
+#                               ^ source.psg punctuation.section.group.begin.glossomathia
+#                                ^^ source.psg constant.numeric.integer.glossomathia
+#                                  ^ source.psg punctuation.section.group.end.glossomathia
+#                                   ^ source.psg punctuation.separator.comma.glossomathia
+#                                    ^ source.psg
+#                                     ^^^^^^^^^ source.psg support.function.builtin.glossomathia
+#                                              ^ source.psg punctuation.section.group.begin.glossomathia
+#                                               ^ source.psg string.quoted.single.glossomathia punctuation.definition.string.begin.glossomathia
+#                                                ^ source.psg string.quoted.single.glossomathia string.quoted.single.glossomathia
+#                                                 ^ source.psg string.quoted.single.glossomathia punctuation.definition.string.end.glossomathia
+#                                                  ^ source.psg punctuation.section.group.end.glossomathia
+>
+>  ! εμπλουτισμένο συντακτικό: διακοπή ροής
+#^^ source.psg
+#  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ source.psg comment.line.exclamation.glossomathia
+>  ΑΝ σημαία = ΨΕΥΔΗΣ ΤΟΤΕ
+#^^ source.psg
+#  ^^ source.psg keyword.control.conditional.glossomathia
+#    ^ source.psg
+#     ^^^^^^ source.psg variable.other.glossomathia
+#           ^ source.psg
+#            ^ source.psg keyword.operator.comparison.glossomathia
+#             ^ source.psg
+#              ^^^^^^ source.psg constant.language.boolean.glossomathia
+#                    ^ source.psg
+#                     ^^^^ source.psg keyword.control.conditional.glossomathia
+>    ΕΞΟΔΟΣ
+#^^^^ source.psg
+#    ^^^^^^ source.psg keyword.control.flow.termination.glossomathia
+>  ΑΛΛΙΩΣ_ΑΝ α = 0 ΤΟΤΕ
+#^^ source.psg
+#  ^^^^^^^^^ source.psg keyword.control.conditional.glossomathia
+#           ^ source.psg
+#            ^ source.psg variable.other.glossomathia
+#             ^ source.psg
+#              ^ source.psg keyword.operator.comparison.glossomathia
+#               ^ source.psg
+#                ^ source.psg constant.numeric.integer.glossomathia
+#                 ^ source.psg
+#                  ^^^^ source.psg keyword.control.conditional.glossomathia
+>    ΤΕΡΜΑΤΙΣΜΟΣ
+#^^^^ source.psg
+#    ^^^^^^^^^^^ source.psg keyword.control.flow.termination.glossomathia
+>  ΑΛΛΙΩΣ_ΑΝ β = 0 ΤΟΤΕ
+#^^ source.psg
+#  ^^^^^^^^^ source.psg keyword.control.conditional.glossomathia
+#           ^ source.psg
+#            ^ source.psg variable.other.glossomathia
+#             ^ source.psg
+#              ^ source.psg keyword.operator.comparison.glossomathia
+#               ^ source.psg
+#                ^ source.psg constant.numeric.integer.glossomathia
+#                 ^ source.psg
+#                  ^^^^ source.psg keyword.control.conditional.glossomathia
+>    ΚΛΕΙΣΕ_ΠΑΡΑΘΥΡΟ
+#^^^^ source.psg
+#    ^^^^^^^^^^^^^^^ source.psg keyword.control.flow.termination.glossomathia
+>  ΤΕΛΟΣ_ΑΝ
+#^^ source.psg
+#  ^^^^^^^^ source.psg keyword.control.conditional.glossomathia
+>
+>ΤΕΛΟΣ_ΠΡΟΓΡΑΜΜΑΤΟΣ Κάλυψη_Συντακτικού
+#^^^^^^^^^^^^^^^^^^ source.psg keyword.other.program.glossomathia
+#                  ^ source.psg
+#                   ^^^^^^^^^^^^^^^^^^ source.psg variable.other.glossomathia
+>

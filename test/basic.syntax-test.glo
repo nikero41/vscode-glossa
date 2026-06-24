@@ -8,10 +8,12 @@
 
 ΓΡΑΨΕ 'μήνυμα'
 ! <---- support.function.io.glossomathia
-!      ^ punctuation.definition.string.begin.glossomathia
 
-τιμή <-- 1
-!    <-- keyword.operator.assignment.glossomathia
+'μήνυμα'
+! <- punctuation.definition.string.begin.glossomathia
+
+<--
+! <-- keyword.operator.assignment.glossomathia
 
 ΑΝ τιμή > 0 ΤΟΤΕ
 ! <- keyword.control.conditional.glossomathia
