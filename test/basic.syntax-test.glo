@@ -1,0 +1,20 @@
+! SYNTAX TEST "source.psg" "basic ΓΛΩΣΣΑ .glo syntax"
+
+! σχόλιο σε αρχείο .glo
+! <------ comment.line.exclamation.glossomathia
+
+ΠΡΟΓΡΑΜΜΑ Παράδειγμα_GLO
+! <-------- keyword.other.program.glossomathia
+
+ΓΡΑΨΕ 'μήνυμα'
+! <---- support.function.io.glossomathia
+!      ^ punctuation.definition.string.begin.glossomathia
+
+τιμή <-- 1
+!    <-- keyword.operator.assignment.glossomathia
+
+ΑΝ τιμή > 0 ΤΟΤΕ
+! <- keyword.control.conditional.glossomathia
+
+ΗΜ(τιμή)
+! < support.function.builtin.glossomathia
