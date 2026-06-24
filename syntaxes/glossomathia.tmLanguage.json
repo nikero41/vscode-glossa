@@ -1,6 +1,6 @@
 {
 	"$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
-	"name": "Pseudoglossa",
+	"name": "Glossomathia",
 	"scopeName": "source.psg",
 	"patterns": [
 		{ "include": "#comments" },
@@ -24,27 +24,27 @@
 	"repository": {
 		"comments": {
 			"patterns": [
-				{ "name": "comment.line.exclamation.pseudoglossa", "match": "!.*$" }
+				{ "name": "comment.line.exclamation.glossomathia", "match": "!.*$" }
 			]
 		},
 		"strings": {
 			"patterns": [
 				{
-					"name": "string.quoted.single.pseudoglossa",
+					"name": "string.quoted.single.glossomathia",
 					"match": "(')([^'\\n]*)(')",
 					"captures": {
-						"1": { "name": "punctuation.definition.string.begin.pseudoglossa" },
-						"2": { "name": "string.quoted.single.pseudoglossa" },
-						"3": { "name": "punctuation.definition.string.end.pseudoglossa" }
+						"1": { "name": "punctuation.definition.string.begin.glossomathia" },
+						"2": { "name": "string.quoted.single.glossomathia" },
+						"3": { "name": "punctuation.definition.string.end.glossomathia" }
 					}
 				},
 				{
-					"name": "string.quoted.single.curly.pseudoglossa",
+					"name": "string.quoted.single.curly.glossomathia",
 					"match": "(‘)([^’\\n]*)(’)",
 					"captures": {
-						"1": { "name": "punctuation.definition.string.begin.pseudoglossa" },
-						"2": { "name": "string.quoted.single.curly.pseudoglossa" },
-						"3": { "name": "punctuation.definition.string.end.pseudoglossa" }
+						"1": { "name": "punctuation.definition.string.begin.glossomathia" },
+						"2": { "name": "string.quoted.single.curly.glossomathia" },
+						"3": { "name": "punctuation.definition.string.end.glossomathia" }
 					}
 				}
 			]
@@ -52,7 +52,7 @@
 		"program-structure": {
 			"patterns": [
 				{
-					"name": "keyword.other.program.pseudoglossa",
+					"name": "keyword.other.program.glossomathia",
 					"match": "\\b(ΠΡΟΓΡΑΜΜΑ|ΤΕΛΟΣ_ΠΡΟΓΡΑΜΜΑΤΟΣ|ΑΡΧΗ|ΣΤΑΘΕΡΕΣ|ΜΕΤΑΒΛΗΤΕΣ)\\b"
 				}
 			]
@@ -62,34 +62,34 @@
 				{
 					"match": "\\b(ΔΙΑΔΙΚΑΣΙΑ)\\s+([A-Za-zΑ-ΩΆΈΉΊΌΎΏα-ωάέήίόύώ_][A-Za-zΑ-ΩΆΈΉΊΌΎΏα-ωάέήίόύώ0-9_]*)(\\s*\\()([^)]*)(\\))",
 					"captures": {
-						"1": { "name": "keyword.other.subprogram.pseudoglossa" },
-						"2": { "name": "entity.name.function.pseudoglossa" },
-						"3": { "name": "punctuation.section.group.begin.pseudoglossa" },
-						"4": { "name": "variable.parameter.pseudoglossa" },
-						"5": { "name": "punctuation.section.group.end.pseudoglossa" }
+						"1": { "name": "keyword.other.subprogram.glossomathia" },
+						"2": { "name": "entity.name.function.glossomathia" },
+						"3": { "name": "punctuation.section.group.begin.glossomathia" },
+						"4": { "name": "variable.parameter.glossomathia" },
+						"5": { "name": "punctuation.section.group.end.glossomathia" }
 					}
 				},
 				{
 					"match": "\\b(ΣΥΝΑΡΤΗΣΗ)\\s+([A-Za-zΑ-ΩΆΈΉΊΌΎΏα-ωάέήίόύώ_][A-Za-zΑ-ΩΆΈΉΊΌΎΏα-ωάέήίόύώ0-9_]*)(\\s*\\()([^)]*)(\\))(\\s*:)(\\s*)(ΑΚΕΡΑΙΑ|ΠΡΑΓΜΑΤΙΚΗ|ΧΑΡΑΚΤΗΡΑΣ|ΛΟΓΙΚΗ)",
 					"captures": {
-						"1": { "name": "keyword.other.subprogram.pseudoglossa" },
-						"2": { "name": "entity.name.function.pseudoglossa" },
-						"3": { "name": "punctuation.section.group.begin.pseudoglossa" },
-						"4": { "name": "variable.parameter.pseudoglossa" },
-						"5": { "name": "punctuation.section.group.end.pseudoglossa" },
-						"6": { "name": "punctuation.separator.colon.pseudoglossa" },
-						"8": { "name": "storage.type.pseudoglossa" }
+						"1": { "name": "keyword.other.subprogram.glossomathia" },
+						"2": { "name": "entity.name.function.glossomathia" },
+						"3": { "name": "punctuation.section.group.begin.glossomathia" },
+						"4": { "name": "variable.parameter.glossomathia" },
+						"5": { "name": "punctuation.section.group.end.glossomathia" },
+						"6": { "name": "punctuation.separator.colon.glossomathia" },
+						"8": { "name": "storage.type.glossomathia" }
 					}
 				},
 				{
 					"match": "\\b(ΚΑΛΕΣΕ)\\s+([A-Za-zΑ-ΩΆΈΉΊΌΎΏα-ωάέήίόύώ_][A-Za-zΑ-ΩΆΈΉΊΌΎΏα-ωάέήίόύώ0-9_]*)(?=\\s*\\()",
 					"captures": {
-						"1": { "name": "keyword.other.subprogram.pseudoglossa" },
-						"2": { "name": "entity.name.function.call.pseudoglossa" }
+						"1": { "name": "keyword.other.subprogram.glossomathia" },
+						"2": { "name": "entity.name.function.call.glossomathia" }
 					}
 				},
 				{
-					"name": "keyword.other.subprogram.pseudoglossa",
+					"name": "keyword.other.subprogram.glossomathia",
 					"match": "\\b(ΤΕΛΟΣ_ΔΙΑΔΙΚΑΣΙΑΣ|ΤΕΛΟΣ_ΣΥΝΑΡΤΗΣΗΣ)\\b"
 				}
 			]
@@ -99,20 +99,20 @@
 				{
 					"match": "\\b(ΠΕΡΙΠΤΩΣΗ)\\s+(ΑΛΛΙΩΣ)\\b",
 					"captures": {
-						"1": { "name": "keyword.control.switch.pseudoglossa" },
-						"2": { "name": "keyword.control.default.pseudoglossa" }
+						"1": { "name": "keyword.control.switch.glossomathia" },
+						"2": { "name": "keyword.control.default.glossomathia" }
 					}
 				},
 				{
-					"name": "keyword.control.conditional.pseudoglossa",
+					"name": "keyword.control.conditional.glossomathia",
 					"match": "\\b(ΑΝ|ΤΟΤΕ|ΑΛΛΙΩΣ_ΑΝ|ΑΛΛΙΩΣ|ΤΕΛΟΣ_ΑΝ)\\b"
 				},
 				{
-					"name": "keyword.control.loop.pseudoglossa",
+					"name": "keyword.control.loop.glossomathia",
 					"match": "\\b(ΓΙΑ|ΑΠΟ|ΜΕΧΡΙ|ΜΕ|ΒΗΜΑ|ΟΣΟ|ΕΠΑΝΑΛΑΒΕ|ΑΡΧΗ_ΕΠΑΝΑΛΗΨΗΣ|ΜΕΧΡΙΣ_ΟΤΟΥ|ΤΕΛΟΣ_ΕΠΑΝΑΛΗΨΗΣ)\\b"
 				},
 				{
-					"name": "keyword.control.switch.pseudoglossa",
+					"name": "keyword.control.switch.glossomathia",
 					"match": "\\b(ΕΠΙΛΕΞΕ|ΠΕΡΙΠΤΩΣΗ|ΤΕΛΟΣ_ΕΠΙΛΟΓΩΝ)\\b"
 				}
 			]
@@ -120,7 +120,7 @@
 		"enhanced-flow-control": {
 			"patterns": [
 				{
-					"name": "keyword.control.flow.termination.pseudoglossa",
+					"name": "keyword.control.flow.termination.glossomathia",
 					"match": "\\b(ΤΕΡΜΑΤΙΣΜΟΣ|ΚΛΕΙΣΕ_ΠΑΡΑΘΥΡΟ|ΕΞΟΔΟΣ)\\b"
 				}
 			]
@@ -128,7 +128,7 @@
 		"io-keywords": {
 			"patterns": [
 				{
-					"name": "support.function.io.pseudoglossa",
+					"name": "support.function.io.glossomathia",
 					"match": "\\b(ΔΙΑΒΑΣΕ|ΓΡΑΨΕ_|ΓΡΑΨΕ)(?![A-Za-zΑ-ΩΆΈΉΊΌΎΏα-ωάέήίόύώ0-9_])"
 				}
 			]
@@ -136,20 +136,20 @@
 		"operators": {
 			"patterns": [
 				{
-					"name": "keyword.operator.word.pseudoglossa",
+					"name": "keyword.operator.word.glossomathia",
 					"match": "\\b(DIV|MOD|ΚΑΙ|Η|Ή|ΟΧΙ)\\b"
 				},
 				{
-					"name": "keyword.operator.assignment.pseudoglossa",
+					"name": "keyword.operator.assignment.glossomathia",
 					"match": "(<--|<-|←)"
 				},
-				{ "name": "keyword.operator.range.pseudoglossa", "match": "(\\.\\.)" },
+				{ "name": "keyword.operator.range.glossomathia", "match": "(\\.\\.)" },
 				{
-					"name": "keyword.operator.comparison.pseudoglossa",
+					"name": "keyword.operator.comparison.glossomathia",
 					"match": "(<=|>=|<>|=|<|>)"
 				},
 				{
-					"name": "keyword.operator.arithmetic.pseudoglossa",
+					"name": "keyword.operator.arithmetic.glossomathia",
 					"match": "(\\+|-|\\*|/|\\^)"
 				}
 			]
@@ -157,7 +157,7 @@
 		"booleans": {
 			"patterns": [
 				{
-					"name": "constant.language.boolean.pseudoglossa",
+					"name": "constant.language.boolean.glossomathia",
 					"match": "\\b(ΑΛΗΘΗΣ|ΨΕΥΔΗΣ)\\b"
 				}
 			]
@@ -165,7 +165,7 @@
 		"types": {
 			"patterns": [
 				{
-					"name": "storage.type.pseudoglossa",
+					"name": "storage.type.glossomathia",
 					"match": "\\b(ΑΚΕΡΑΙΑ|ΑΚΕΡΑΙΕΣ|ΠΡΑΓΜΑΤΙΚΗ|ΠΡΑΓΜΑΤΙΚΕΣ|ΧΑΡΑΚΤΗΡΑΣ|ΧΑΡΑΚΤΗΡΕΣ|ΛΟΓΙΚΗ|ΛΟΓΙΚΕΣ)\\b"
 				}
 			]
@@ -173,11 +173,11 @@
 		"numbers": {
 			"patterns": [
 				{
-					"name": "constant.numeric.float.pseudoglossa",
+					"name": "constant.numeric.float.glossomathia",
 					"match": "\\b\\d+\\.\\d+\\b"
 				},
 				{
-					"name": "constant.numeric.integer.pseudoglossa",
+					"name": "constant.numeric.integer.glossomathia",
 					"match": "\\b\\d+\\b"
 				}
 			]
@@ -185,7 +185,7 @@
 		"builtin-functions": {
 			"patterns": [
 				{
-					"name": "support.function.builtin.pseudoglossa",
+					"name": "support.function.builtin.glossomathia",
 					"match": "\\b(ΗΜ|ΣΥΝ|ΕΦ|Τ_Ρ|Α_Μ|Α_Τ|ΛΟΓ|Ε)\\b(?=\\s*\\()"
 				}
 			]
@@ -193,11 +193,11 @@
 		"enhanced-functions": {
 			"patterns": [
 				{
-					"name": "support.function.builtin.pseudoglossa",
+					"name": "support.function.builtin.glossomathia",
 					"match": "\\b(ΤΥΧΑΙΟΣ|ΣΤΡΟΓΓ|Κ_Μ)\\b(?=\\s*\\()"
 				},
 				{
-					"name": "support.function.builtin.pseudoglossa",
+					"name": "support.function.builtin.glossomathia",
 					"match": "\\b(ΜΗΚΟΣ_ΧΑΡ|ΣΕΙΡΑ_ΧΑΡ|ΧΑΡ)\\b(?=\\s*\\()"
 				}
 			]
@@ -205,15 +205,15 @@
 		"enhanced-screen-execution": {
 			"patterns": [
 				{
-					"name": "keyword.control.execution.pseudoglossa",
+					"name": "keyword.control.execution.glossomathia",
 					"match": "\\b(ΣΕΙΡΙΑΚΗ_ΕΚΤΕΛΕΣΗ|ΠΑΡΑΛΛΗΛΗ_ΕΚΤΕΛΕΣΗ|ΕΚΤΕΛΕΣΕ)\\b"
 				},
 				{
-					"name": "support.function.screen.pseudoglossa",
+					"name": "support.function.screen.glossomathia",
 					"match": "\\b(ΚΑΘΑΡΙΣΕ_ΟΘΟΝΗ|ΠΗΓΑΙΝΕ_ΧΥ)\\b"
 				},
 				{
-					"name": "support.variable.screen.pseudoglossa",
+					"name": "support.variable.screen.glossomathia",
 					"match": "\\b(ΘΕΣΗ_Χ|ΘΕΣΗ_Υ)\\b"
 				}
 			]
@@ -221,7 +221,7 @@
 		"function-call": {
 			"patterns": [
 				{
-					"name": "entity.name.function.call.pseudoglossa",
+					"name": "entity.name.function.call.glossomathia",
 					"match": "\\b[A-Za-zΑ-ΩΆΈΉΊΌΎΏα-ωάέήίόύώ_][A-Za-zΑ-ΩΆΈΉΊΌΎΏα-ωάέήίόύώ0-9_]*(?=\\s*\\()"
 				}
 			]
@@ -229,29 +229,29 @@
 		"punctuation": {
 			"patterns": [
 				{
-					"name": "punctuation.definition.array.begin.pseudoglossa",
+					"name": "punctuation.definition.array.begin.glossomathia",
 					"match": "\\["
 				},
 				{
-					"name": "punctuation.definition.array.end.pseudoglossa",
+					"name": "punctuation.definition.array.end.glossomathia",
 					"match": "\\]"
 				},
 				{
-					"name": "punctuation.section.group.begin.pseudoglossa",
+					"name": "punctuation.section.group.begin.glossomathia",
 					"match": "\\("
 				},
 				{
-					"name": "punctuation.section.group.end.pseudoglossa",
+					"name": "punctuation.section.group.end.glossomathia",
 					"match": "\\)"
 				},
-				{ "name": "punctuation.separator.comma.pseudoglossa", "match": "," },
-				{ "name": "punctuation.separator.colon.pseudoglossa", "match": ":" }
+				{ "name": "punctuation.separator.comma.glossomathia", "match": "," },
+				{ "name": "punctuation.separator.colon.glossomathia", "match": ":" }
 			]
 		},
 		"identifiers": {
 			"patterns": [
 				{
-					"name": "variable.other.pseudoglossa",
+					"name": "variable.other.glossomathia",
 					"match": "\\b[A-Za-zΑ-ΩΆΈΉΊΌΎΏα-ωάέήίόύώ_][A-Za-zΑ-ΩΆΈΉΊΌΎΏα-ωάέήίόύώ0-9_]*\\b"
 				}
 			]

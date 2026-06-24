@@ -1,6 +1,6 @@
 import type { LanguageDefinition } from "./types.js";
 
-export const pseudoglossa = {
+export const glossomathia = {
 	lexical: {
 		identifier:
 			"[A-Za-zΑ-ΩΆΈΉΊΌΎΏα-ωάέήίόύώ_][A-Za-zΑ-ΩΆΈΉΊΌΎΏα-ωάέήίόύώ0-9_]*",

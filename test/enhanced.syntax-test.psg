@@ -1,49 +1,49 @@
-! SYNTAX TEST "source.psg" "enhanced Pseudoglossa grammar"
+! SYNTAX TEST "source.psg" "enhanced Glossomathia syntax"
 
 ΕΚΤΕΛΕΣΕ 'NOTEPAD.EXE'
-! <------ keyword.control.execution.pseudoglossa
+! <------ keyword.control.execution.glossomathia
 
 ΣΕΙΡΙΑΚΗ_ΕΚΤΕΛΕΣΗ
-! <---------------- keyword.control.execution.pseudoglossa
+! <---------------- keyword.control.execution.glossomathia
 
 ΠΑΡΑΛΛΗΛΗ_ΕΚΤΕΛΕΣΗ
-! <----------------- keyword.control.execution.pseudoglossa
+! <----------------- keyword.control.execution.glossomathia
 
 ΚΑΘΑΡΙΣΕ_ΟΘΟΝΗ
-! <------------- support.function.screen.pseudoglossa
+! <------------- support.function.screen.glossomathia
 
 ΠΗΓΑΙΝΕ_ΧΥ 10, 5
-! <--------- support.function.screen.pseudoglossa
+! <--------- support.function.screen.glossomathia
 
 ΘΕΣΗ_Χ
-! <----- support.variable.screen.pseudoglossa
+! <----- support.variable.screen.glossomathia
 
 ΘΕΣΗ_Υ
-! <----- support.variable.screen.pseudoglossa
+! <----- support.variable.screen.glossomathia
 
 ΤΥΧΑΙΟΣ(100)
-! <------ support.function.builtin.pseudoglossa
+! <------ support.function.builtin.glossomathia
 
 ΣΤΡΟΓΓ(4.96)
-! <----- support.function.builtin.pseudoglossa
+! <----- support.function.builtin.glossomathia
 
 Κ_Μ(2.75)
-! <-- support.function.builtin.pseudoglossa
+! <-- support.function.builtin.glossomathia
 
 ΜΗΚΟΣ_ΧΑΡ(κείμενο)
-! <-------- support.function.builtin.pseudoglossa
+! <-------- support.function.builtin.glossomathia
 
 ΧΑΡ(65)
-! <-- support.function.builtin.pseudoglossa
+! <-- support.function.builtin.glossomathia
 
 ΣΕΙΡΑ_ΧΑΡ('Α')
-! <-------- support.function.builtin.pseudoglossa
+! <-------- support.function.builtin.glossomathia
 
 ΕΞΟΔΟΣ
-! <--- keyword.control.flow.termination.pseudoglossa
+! <--- keyword.control.flow.termination.glossomathia
 
 ΤΕΡΜΑΤΙΣΜΟΣ
-! <--------- keyword.control.flow.termination.pseudoglossa
+! <--------- keyword.control.flow.termination.glossomathia
 
 ΚΛΕΙΣΕ_ΠΑΡΑΘΥΡΟ
-! <-------------- keyword.control.flow.termination.pseudoglossa
+! <-------------- keyword.control.flow.termination.glossomathia

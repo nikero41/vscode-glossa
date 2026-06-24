@@ -1,64 +1,64 @@
-! SYNTAX TEST "source.psg" "basic Pseudoglossa grammar"
+! SYNTAX TEST "source.psg" "basic Glossomathia syntax"
 
 ! σχόλιο
-! <------ comment.line.exclamation.pseudoglossa
+! <------ comment.line.exclamation.glossomathia
 
 'γειά'
-! <- punctuation.definition.string.begin.pseudoglossa
+! <- punctuation.definition.string.begin.glossomathia
 
 ΑΝ α > 0 ΤΟΤΕ
-! <- keyword.control.conditional.pseudoglossa
+! <- keyword.control.conditional.glossomathia
 
 ΤΟΤΕ
-! <--- keyword.control.conditional.pseudoglossa
+! <--- keyword.control.conditional.glossomathia
 
 ΓΡΑΨΕ_ 'μήνυμα'
-! <----- support.function.io.pseudoglossa
+! <----- support.function.io.glossomathia
 
 ΠΕΡΙΠΤΩΣΗ ΑΛΛΙΩΣ
-! <-------- keyword.control.switch.pseudoglossa
+! <-------- keyword.control.switch.glossomathia
 
 ΑΛΛΙΩΣ
-! <----- keyword.control.conditional.pseudoglossa
+! <----- keyword.control.conditional.glossomathia
 
 ..
-! < keyword.operator.range.pseudoglossa
+! < keyword.operator.range.glossomathia
 
 <--
-! <-- keyword.operator.assignment.pseudoglossa
+! <-- keyword.operator.assignment.glossomathia
 
 ^
-! < keyword.operator.arithmetic.pseudoglossa
+! < keyword.operator.arithmetic.glossomathia
 
 3.14
-! <--- constant.numeric.float.pseudoglossa
+! <--- constant.numeric.float.glossomathia
 
 ΑΛΗΘΗΣ
-! <----- constant.language.boolean.pseudoglossa
+! <----- constant.language.boolean.glossomathia
 
 [
-! < punctuation.definition.array.begin.pseudoglossa
+! < punctuation.definition.array.begin.glossomathia
 
 ,
-! < punctuation.separator.comma.pseudoglossa
+! < punctuation.separator.comma.glossomathia
 
 ]
-! < punctuation.definition.array.end.pseudoglossa
+! < punctuation.definition.array.end.glossomathia
 
 ΔΙΑΔΙΚΑΣΙΑ Διπλασίασε(τιμή)
-! <--------- keyword.other.subprogram.pseudoglossa
+! <--------- keyword.other.subprogram.glossomathia
 
 ΣΥΝΑΡΤΗΣΗ Κύβος(τιμή): ΑΚΕΡΑΙΑ
-! <------- keyword.other.subprogram.pseudoglossa
+! <------- keyword.other.subprogram.glossomathia
 
 ΑΚΕΡΑΙΑ
-! <------ storage.type.pseudoglossa
+! <------ storage.type.glossomathia
 
 ΚΑΛΕΣΕ Διπλασίασε(α)
-! <---- keyword.other.subprogram.pseudoglossa
+! <---- keyword.other.subprogram.glossomathia
 
 ΗΜ(x)
-! < support.function.builtin.pseudoglossa
+! < support.function.builtin.glossomathia
 
 Κύβος(β)
-! <---- entity.name.function.call.pseudoglossa
+! <---- entity.name.function.call.glossomathia
