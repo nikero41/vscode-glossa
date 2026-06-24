@@ -60,7 +60,7 @@
 		],
 		"grammars": [
 			{
-				"language": "glosomathia",
+				"language": "glossomathia",
 				"scopeName": "source.psg",
 				"path": "./syntaxes/glossomathia.tmLanguage.json"
 			}
