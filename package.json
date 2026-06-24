@@ -23,7 +23,9 @@
 	"files": [
 		"language-configuration.json",
 		"syntaxes",
-		"README.md"
+		"README.md",
+		"CHANGELOG.md",
+		"LICENSE"
 	],
 	"scripts": {
 		"lint": "concurrently --group --names oxc,types -c=#ea580c,#307fe2 --success=all \"npm:lint:oxc --silent\" \"npm:lint:ts --silent\"",
