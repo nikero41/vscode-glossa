@@ -1,7 +1,7 @@
 import { defineConfig } from "oxlint";
 
 export default defineConfig({
-	ignorePatterns: ["node_modules"],
+	ignorePatterns: ["node_modules", "out"],
 	plugins: ["oxc", "unicorn", "import", "eslint", "promise", "typescript"],
 	categories: {
 		perf: "warn",
@@ -81,6 +81,7 @@ export default defineConfig({
 
 		"promise/avoid-new": "off",
 		"promise/prefer-await-to-then": "off",
+		"promise/always-return": "off",
 
 		"typescript/no-unused-vars": "error",
 		"typescript/no-unnecessary-condition": "warn",

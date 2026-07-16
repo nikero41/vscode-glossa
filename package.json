@@ -27,23 +27,29 @@
 		"theme": "dark"
 	},
 	"preview": true,
+	"main": "./out/src/extension.js",
 	"icon": "./assets/logo-small.png",
 	"files": [
 		"language-configuration.json",
 		"syntaxes",
 		"README.md",
 		"CHANGELOG.md",
-		"LICENSE"
+		"LICENSE",
+		"out/src/extension.js"
 	],
 	"scripts": {
 		"lint": "concurrently --group --names oxc,types -c=#ea580c,#307fe2 --success=all \"npm:lint:oxc --silent\" \"npm:lint:ts --silent\"",
 		"lint:oxc": "oxlint",
 		"lint:ts": "tsc --noEmit",
-		"build": "tsx src/generators/textmate/build.ts",
 		"fmt": "oxfmt",
-		"test": "npm run build && vscode-tmgrammar-test \"test/**/*.syntax-test.{psg,glo,gls}\"",
+		"build": "npm run build:grammar && npm run build:extension",
+		"test": "npm run build:grammar && vscode-tmgrammar-test \"test/**/*.syntax-test.{psg,glo,gls}\"",
 		"test:snap": "vscode-tmgrammar-snap \"example_files/**/*.{psg,glo,gls}\"",
-		"test:snap:update": "vscode-tmgrammar-snap --updateSnapshot \"example_files/**/*.{psg,glo,gls}\""
+		"test:snap:update": "vscode-tmgrammar-snap --updateSnapshot \"example_files/**/*.{psg,glo,gls}\"",
+		"build:grammar": "tsx src/generators/textmate/build.ts",
+		"build:extension": "tsc",
+		"watch": "tsc --watch",
+		"vscode:prepublish": "npm run build:extension"
 	},
 	"engines": {
 		"vscode": "^1.120.0"
@@ -88,6 +94,7 @@
 		"@total-typescript/ts-reset": "^0.6.1",
 		"@total-typescript/tsconfig": "^1.0.4",
 		"@types/node": "^25.9.3",
+		"@types/vscode": "^1.125.0",
 		"concurrently": "^10.0.3",
 		"eslint-plugin-import-zod": "^1.2.1",
 		"oxfmt": "^0.54.0",

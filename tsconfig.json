@@ -1,8 +1,10 @@
 {
 	"extends": "@total-typescript/tsconfig/tsc/no-dom/app",
 	"compilerOptions": {
+		"rootDir": ".",
+		"outDir": "./out",
 		"allowJs": false,
-		"noEmit": true,
+		"noEmit": false,
 		"types": ["node"]
 	},
 	"include": ["src/**/*.ts", "test/**/*.ts"],
