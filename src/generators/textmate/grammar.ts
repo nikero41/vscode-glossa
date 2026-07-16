@@ -5,7 +5,7 @@ import {
 	identifier,
 	notIdentifierAhead,
 	wordGroup,
-} from "./regex.js";
+} from "./helpers.js";
 import { defineGrammar } from "./rules.js";
 import { scopes } from "./scopes.js";
 

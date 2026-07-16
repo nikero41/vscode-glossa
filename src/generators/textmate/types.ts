@@ -1,9 +1,11 @@
+import type { scopes } from "./scopes.js";
+
 export interface Capture {
 	name: string;
 }
 
 export interface GrammarRule {
-	name?: string;
+	name?: (typeof scopes)[keyof typeof scopes];
 	match?: string;
 	include?: string;
 	captures?: Record<string, Capture>;

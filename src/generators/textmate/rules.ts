@@ -1,3 +1,4 @@
+import { mapObjectValues } from "./helpers.js";
 import type { Grammar, GrammarInput } from "./types.js";
 
 export const defineGrammar = (opts: GrammarInput = {}): Grammar => {
@@ -27,11 +28,3 @@ export const defineGrammar = (opts: GrammarInput = {}): Grammar => {
 		repository,
 	} satisfies Grammar;
 };
-
-const mapObjectValues = <T, U>(
-	obj: Record<string, T>,
-	fn: (value: T) => U,
-): Record<string, U> =>
-	Object.fromEntries(
-		Object.entries(obj).map(([key, value]) => [key, fn(value)]),
-	);

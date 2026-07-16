@@ -25,3 +25,11 @@ export const escapedGroup = (values: readonly string[]) =>
 /** Escapes regex metacharacters in a literal string. */
 const escapeRegex = (value: string) =>
 	value.replaceAll(/[.*+?^${}()|[\]\\]/g, String.raw`\$&`);
+
+export const mapObjectValues = <T, U>(
+	obj: Record<string, T>,
+	fn: (value: T) => U,
+): Record<string, U> =>
+	Object.fromEntries(
+		Object.entries(obj).map(([key, value]) => [key, fn(value)]),
+	);

@@ -1,5 +1,5 @@
-import { writeFileSync } from "node:fs";
-import { join } from "node:path";
+import { writeFileSync } from "fs";
+import { join } from "path";
 
 import { grammar } from "./grammar.js";
 
