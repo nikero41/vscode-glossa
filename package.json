@@ -51,7 +51,7 @@
 		"build:grammar": "tsx src/generators/textmate/build.ts",
 		"build:extension": "tsc",
 		"watch": "tsc --watch",
-		"vscode:prepublish": "npm run build:extension"
+		"vscode:prepublish": "npm run build"
 	},
 	"engines": {
 		"vscode": "^1.120.0"
