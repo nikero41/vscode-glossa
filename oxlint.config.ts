@@ -172,13 +172,7 @@ export default defineConfig({
 				"vitest/prefer-to-be-truthy": "off",
 				"vitest/prefer-to-be-falsy": "off",
 				"vitest/prefer-called-times": "off",
-				"vitest/expect-expect": [
-					"warn",
-					{
-						assertFunctionNames: ["expectTokenScope"],
-						additionalTestBlockFunctions: [],
-					},
-				],
+				"vitest/expect-expect": "warn",
 			},
 		},
 	],
