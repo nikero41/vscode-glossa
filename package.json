@@ -4,7 +4,7 @@
 	"description": "Υποστήριξη για τη γλώσσα ΓΛΩΣΣΑ στο Visual Studio Code, με χρωματισμό σύνταξης.",
 	"version": "0.0.1",
 	"type": "module",
-	"license": "MIT",
+	"license": "SEE LICENSE IN LICENSE",
 	"publisher": "nikero",
 	"repository": {
 		"type": "git",
@@ -27,6 +27,7 @@
 		"theme": "dark"
 	},
 	"preview": true,
+	"icon": "./assets/logo-small.png",
 	"files": [
 		"language-configuration.json",
 		"syntaxes",
@@ -65,7 +66,11 @@
 					".glo",
 					".gls"
 				],
-				"configuration": "./language-configuration.json"
+				"configuration": "./language-configuration.json",
+				"icon": {
+					"dark": "./assets/logo-small.png",
+					"light": "./assets/logo-small.png"
+				}
 			}
 		],
 		"grammars": [
