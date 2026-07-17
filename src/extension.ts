@@ -1,11 +1,10 @@
 import * as vscode from "vscode";
 
-export function activate(_context: vscode.ExtensionContext) {
-}
+export function activate(_context: vscode.ExtensionContext) {}
 
 export function deactivate() {}
 
-const registerCommand = (
+const _registerCommand = (
 	context: vscode.ExtensionContext,
 	name: string,
 	callback: (...args: unknown[]) => unknown,
