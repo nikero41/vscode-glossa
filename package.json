@@ -2,7 +2,7 @@
 	"name": "vscode-glossa",
 	"displayName": "Υποστήριξη ΓΛΩΣΣΑΣ",
 	"description": "Υποστήριξη για τη γλώσσα ΓΛΩΣΣΑ στο Visual Studio Code, με χρωματισμό σύνταξης.",
-	"version": "0.0.1",
+	"version": "0.1.0",
 	"type": "module",
 	"license": "SEE LICENSE IN LICENSE",
 	"publisher": "nikero",
