@@ -3,28 +3,65 @@
 	"name": "Glossomathia",
 	"scopeName": "source.psg",
 	"patterns": [
-		{ "include": "#comments" },
-		{ "include": "#strings" },
-		{ "include": "#program-structure" },
-		{ "include": "#subprograms" },
-		{ "include": "#control-keywords" },
-		{ "include": "#enhanced-flow-control" },
-		{ "include": "#io-keywords" },
-		{ "include": "#operators" },
-		{ "include": "#booleans" },
-		{ "include": "#types" },
-		{ "include": "#numbers" },
-		{ "include": "#builtin-functions" },
-		{ "include": "#enhanced-functions" },
-		{ "include": "#enhanced-screen-execution" },
-		{ "include": "#function-call" },
-		{ "include": "#punctuation" },
-		{ "include": "#identifiers" }
+		{
+			"include": "#comments"
+		},
+		{
+			"include": "#strings"
+		},
+		{
+			"include": "#program-structure"
+		},
+		{
+			"include": "#subprograms"
+		},
+		{
+			"include": "#control-keywords"
+		},
+		{
+			"include": "#enhanced-flow-control"
+		},
+		{
+			"include": "#io-keywords"
+		},
+		{
+			"include": "#operators"
+		},
+		{
+			"include": "#booleans"
+		},
+		{
+			"include": "#types"
+		},
+		{
+			"include": "#numbers"
+		},
+		{
+			"include": "#builtin-functions"
+		},
+		{
+			"include": "#enhanced-functions"
+		},
+		{
+			"include": "#enhanced-screen-execution"
+		},
+		{
+			"include": "#function-call"
+		},
+		{
+			"include": "#punctuation"
+		},
+		{
+			"include": "#identifiers"
+		}
 	],
 	"repository": {
 		"comments": {
 			"patterns": [
-				{ "name": "comment.line.exclamation.glossomathia", "match": "!.*$" }
+				{
+					"name": "comment.line.exclamation.glossomathia",
+					"match": "!.*$"
+				}
 			]
 		},
 		"strings": {
@@ -33,18 +70,30 @@
 					"name": "string.quoted.single.glossomathia",
 					"match": "(')([^'\\n]*)(')",
 					"captures": {
-						"1": { "name": "punctuation.definition.string.begin.glossomathia" },
-						"2": { "name": "string.quoted.single.glossomathia" },
-						"3": { "name": "punctuation.definition.string.end.glossomathia" }
+						"1": {
+							"name": "punctuation.definition.string.begin.glossomathia"
+						},
+						"2": {
+							"name": "string.quoted.single.glossomathia"
+						},
+						"3": {
+							"name": "punctuation.definition.string.end.glossomathia"
+						}
 					}
 				},
 				{
 					"name": "string.quoted.single.curly.glossomathia",
 					"match": "(‘)([^’\\n]*)(’)",
 					"captures": {
-						"1": { "name": "punctuation.definition.string.begin.glossomathia" },
-						"2": { "name": "string.quoted.single.curly.glossomathia" },
-						"3": { "name": "punctuation.definition.string.end.glossomathia" }
+						"1": {
+							"name": "punctuation.definition.string.begin.glossomathia"
+						},
+						"2": {
+							"name": "string.quoted.single.curly.glossomathia"
+						},
+						"3": {
+							"name": "punctuation.definition.string.end.glossomathia"
+						}
 					}
 				}
 			]
@@ -62,30 +111,58 @@
 				{
 					"match": "\\b(ΔΙΑΔΙΚΑΣΙΑ)\\s+([A-Za-zΑ-ΩΆΈΉΊΌΎΏα-ωάέήίόύώ_][A-Za-zΑ-ΩΆΈΉΊΌΎΏα-ωάέήίόύώ0-9_]*)(\\s*\\()([^)]*)(\\))",
 					"captures": {
-						"1": { "name": "keyword.other.subprogram.glossomathia" },
-						"2": { "name": "entity.name.function.glossomathia" },
-						"3": { "name": "punctuation.section.group.begin.glossomathia" },
-						"4": { "name": "variable.parameter.glossomathia" },
-						"5": { "name": "punctuation.section.group.end.glossomathia" }
+						"1": {
+							"name": "keyword.other.subprogram.glossomathia"
+						},
+						"2": {
+							"name": "entity.name.function.glossomathia"
+						},
+						"3": {
+							"name": "punctuation.section.group.begin.glossomathia"
+						},
+						"4": {
+							"name": "variable.parameter.glossomathia"
+						},
+						"5": {
+							"name": "punctuation.section.group.end.glossomathia"
+						}
 					}
 				},
 				{
 					"match": "\\b(ΣΥΝΑΡΤΗΣΗ)\\s+([A-Za-zΑ-ΩΆΈΉΊΌΎΏα-ωάέήίόύώ_][A-Za-zΑ-ΩΆΈΉΊΌΎΏα-ωάέήίόύώ0-9_]*)(\\s*\\()([^)]*)(\\))(\\s*:)(\\s*)(ΑΚΕΡΑΙΑ|ΠΡΑΓΜΑΤΙΚΗ|ΧΑΡΑΚΤΗΡΑΣ|ΛΟΓΙΚΗ)",
 					"captures": {
-						"1": { "name": "keyword.other.subprogram.glossomathia" },
-						"2": { "name": "entity.name.function.glossomathia" },
-						"3": { "name": "punctuation.section.group.begin.glossomathia" },
-						"4": { "name": "variable.parameter.glossomathia" },
-						"5": { "name": "punctuation.section.group.end.glossomathia" },
-						"6": { "name": "punctuation.separator.colon.glossomathia" },
-						"8": { "name": "storage.type.glossomathia" }
+						"1": {
+							"name": "keyword.other.subprogram.glossomathia"
+						},
+						"2": {
+							"name": "entity.name.function.glossomathia"
+						},
+						"3": {
+							"name": "punctuation.section.group.begin.glossomathia"
+						},
+						"4": {
+							"name": "variable.parameter.glossomathia"
+						},
+						"5": {
+							"name": "punctuation.section.group.end.glossomathia"
+						},
+						"6": {
+							"name": "punctuation.separator.colon.glossomathia"
+						},
+						"8": {
+							"name": "storage.type.glossomathia"
+						}
 					}
 				},
 				{
 					"match": "\\b(ΚΑΛΕΣΕ)\\s+([A-Za-zΑ-ΩΆΈΉΊΌΎΏα-ωάέήίόύώ_][A-Za-zΑ-ΩΆΈΉΊΌΎΏα-ωάέήίόύώ0-9_]*)(?=\\s*\\()",
 					"captures": {
-						"1": { "name": "keyword.other.subprogram.glossomathia" },
-						"2": { "name": "entity.name.function.call.glossomathia" }
+						"1": {
+							"name": "keyword.other.subprogram.glossomathia"
+						},
+						"2": {
+							"name": "entity.name.function.call.glossomathia"
+						}
 					}
 				},
 				{
@@ -99,8 +176,12 @@
 				{
 					"match": "\\b(ΠΕΡΙΠΤΩΣΗ)\\s+(ΑΛΛΙΩΣ)\\b",
 					"captures": {
-						"1": { "name": "keyword.control.switch.glossomathia" },
-						"2": { "name": "keyword.control.default.glossomathia" }
+						"1": {
+							"name": "keyword.control.switch.glossomathia"
+						},
+						"2": {
+							"name": "keyword.control.default.glossomathia"
+						}
 					}
 				},
 				{
@@ -143,7 +224,10 @@
 					"name": "keyword.operator.assignment.glossomathia",
 					"match": "(<--|<-|←)"
 				},
-				{ "name": "keyword.operator.range.glossomathia", "match": "(\\.\\.)" },
+				{
+					"name": "keyword.operator.range.glossomathia",
+					"match": "(\\.\\.)"
+				},
 				{
 					"name": "keyword.operator.comparison.glossomathia",
 					"match": "(<=|>=|<>|=|<|>)"
@@ -244,8 +328,14 @@
 					"name": "punctuation.section.group.end.glossomathia",
 					"match": "\\)"
 				},
-				{ "name": "punctuation.separator.comma.glossomathia", "match": "," },
-				{ "name": "punctuation.separator.colon.glossomathia", "match": ":" }
+				{
+					"name": "punctuation.separator.comma.glossomathia",
+					"match": ","
+				},
+				{
+					"name": "punctuation.separator.colon.glossomathia",
+					"match": ":"
+				}
 			]
 		},
 		"identifiers": {
