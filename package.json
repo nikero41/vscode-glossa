@@ -35,7 +35,8 @@
 		"README.md",
 		"CHANGELOG.md",
 		"LICENSE",
-		"out/src/extension.js"
+		"out/**",
+		"assets/**"
 	],
 	"scripts": {
 		"lint": "concurrently --group --names oxc,types -c=#ea580c,#307fe2 --success=all \"npm:lint:oxc --silent\" \"npm:lint:ts --silent\"",
